@@ -1,0 +1,55 @@
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap';
+@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
+
+.header {
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.04);
+    padding: 5px;
+    background-color: #FFFFFF
+}
+
+.columns {
+    .column {
+        align-self: center;
+        .button {
+            justify-content: space-around;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 15px;
+            border-radius: 0;
+            width: 229px;
+            height: 38px;
+            background-color: #ECD4AC;
+            border: none;
+        }
+
+        .button:hover {
+            cursor: pointer;
+        }
+
+        .button:active{
+            outline: solid #000000 0.1px;
+        }
+    }
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    
+    li {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        padding-left: 40px;
+        color: #918E89;
+    }
+
+    li:hover {
+        cursor: pointer;
+    }
+
+    .activeOpt {
+        font-weight: 900;
+        color: #000000;
+    }
+}
