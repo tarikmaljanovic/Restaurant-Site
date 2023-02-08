@@ -1,0 +1,27 @@
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap';
+@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
+
+.container {
+    .columns {
+        font-family: 'Montserrat';
+        h3 {
+            font-weight: 800;
+            font-size: 32px;
+            color: #000000;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .column {
+            .notification {
+                background: #ECD4AC;
+                border-radius: 0%;
+                width: 203.52px;
+                height: 72px;
+                padding: 20px;
+            }
+        }
+    }
+}
