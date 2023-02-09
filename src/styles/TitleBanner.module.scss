@@ -2,135 +2,51 @@
 @import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap';
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
 
+
 .hero-body {
-    z-index: -1;
-    top: 0%;
-    right: 0;
+    overflow: hidden;
+    position: absolute;
     left: 0;
+    right: 0;
+    .background {
+        position: absolute;
+    }
     .container {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
         .columns {
-            width: 100%;
-            height: 100%;
-            flex-direction: row;
-            margin: 0;
             .column {
-                padding: 0;
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 800;
-                font-size: 62px;
-                line-height: 57px;
-                color: #000000;
-                img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .bannerImg {
                     height: auto;
                     width: 100%;
                     display:block;
                 }
-            }
-        }
-    }
-}
-.backgroundImg {
-    position: absolute;
-    z-index: -2;
-    height: 100%;
-    opacity: 0.75;
-}
+                .bannerTitle {
+                /* Hörnet & Västerås */
+                width: 464px;
+                height: 174px;
 
-.foot {
-    font-family: 'Montserrat';
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-    position: relative;
-    top: -60px;
-    
- .notification {
-    font-size: 13px;
-    width: 240px;
-    height: 120px;
-    border: 1px solid #ECD4AC;
-    border-radius: 3px;
-    padding: 10px;
-}
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 92px;
+                line-height: 87px;
+                /* or 95% */
 
-    .notification_1 {
-        background: #FFFFFF;
-        img {
-            width: 30px;
-            height: 30px;
-        }
-        .button {
-            width: 200px;
-            height: 40px;
-            font-size: 14px;
-            font-weight: 800;
-            color: #000000;
-            .icon {
-                background: #FFFFFF;
-                border-radius: 100px;
-                transform: rotate(180deg);
-                display: flex;
-                align-self: center;
-                img {
-                    width: 12px;
-                    height: 8px;
+
+                /* Color / Black */
+
+                color: #000000;
+
+
+                /* Inside auto layout */
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
                 }
             }
         }
     }
-    .notification_2 {
-        background: #FFFFFF;
-
-        img {
-            width: 30px;
-            height: 30px;
-            margin: 2px;
-        }
-    }
-    .notification_3 {
-        background: #FFFFFF;
-        img {
-            width: 30px;
-            height: 30px;
-            margin: 2px;
-        }
-    }
-    .notification_4 {
-        background: #ECD4AC;
-
-        .button {
-            width: 200px;
-            height: 40px;
-            background-color: #FFFFFF;
-            font-family: 'Montserrat';
-            font-size: 12px;
-            color: #000000;
-            font-weight: 800;
-        }
-    }
-}
-
-.n2paragraph {
-    font-weight: 800;
-    color: #000000;
-}
-
-.n3paragraph {
-    font-weight: 800;
-    color: #000000;
-}
-
-.n4paragraph {
-    font-weight: 800;
-    color: #000000;
-    line-height: 15px;
-}
-
-.dropdown-content {
-    border: solid #ECD4AC 1px;
 }

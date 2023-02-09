@@ -2,58 +2,161 @@
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
 
 .header {
+    height: 96px;
+    left: 0px;
+    top: 0px;
+
+    /* Color / White */
+
+    background: #FFFFFF;
+    /* Shadow */
+
     box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.04);
-    padding: 5px;
-    background-color: #FFFFFF;
-    position: fixed;
-    z-index: 1000;
-    right: 0;
-    left: 0;
-}
-
-.columns {
-    .column {
-        align-self: center;
-        .button {
-            justify-content: space-around;
-            font-family: 'Montserrat';
-            font-weight: 700;
-            font-size: 15px;
-            border-radius: 0;
-            width: 229px;
-            height: 38px;
-            background-color: #ECD4AC;
-            border: none;
-        }
-
-        .button:hover {
-            cursor: pointer;
-        }
-
-        .button:active{
-            outline: solid #000000 0.1px;
-        }
-    }
-}
-
-.options {
+    align-items: center;
     display: flex;
-    justify-content: space-between;
-    
-    li {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        padding-left: 40px;
-        color: #918E89;
-    }
+    .container {
+        .columns {
+            .column {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .logo {
 
-    li:hover {
-        cursor: pointer;
-    }
+                }
+                .options {
+                    /* Auto layout */
 
-    .activeOpt {
-        font-weight: 900;
-        color: #000000;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    padding: 0px;
+                    gap: 40px;
+
+                    position: absolute;
+                    width: 325px;
+                    height: 17px;
+                    .hem {
+                        /* HEM */
+
+                        width: 35px;
+                        height: 17px;
+
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 17px;
+                        /* identical to box height */
+
+
+                        /* Color / Black */
+
+                        color: #000000;
+
+
+                        /* Inside auto layout */
+
+                        flex: none;
+                        order: 0;
+                        flex-grow: 0;
+                    }
+                    .meny {
+                        /* MENY */
+        
+                        width: 44px;
+                        height: 17px;
+        
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        /* identical to box height */
+        
+        
+                        /* Color / Grey */
+        
+                        color: #918E89;
+        
+        
+                        /* Inside auto layout */
+        
+                        flex: none;
+                        order: 1;
+                        flex-grow: 0;
+                    }
+                    .om-oss {
+                        /* OM OSS */
+        
+                        width: 58px;
+                        height: 17px;
+        
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        /* identical to box height */
+        
+        
+                        /* Color / Grey */
+        
+                        color: #918E89;
+        
+        
+                        /* Inside auto layout */
+        
+                        flex: none;
+                        order: 2;
+                        flex-grow: 0;
+                    }
+                    .kontakt {
+                        /* KONTAKT */
+        
+                        width: 68px;
+                        height: 17px;
+        
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        /* identical to box height */
+        
+        
+                        /* Color / Grey */
+        
+                        color: #918E89;
+        
+        
+                        /* Inside auto layout */
+        
+                        flex: none;
+                        order: 3;
+                        flex-grow: 0;
+                    }
+                }
+                
+                .button {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 12px 26px;
+                    gap: 10px;
+
+                    /* Color / Primary */
+
+                    background: #ECD4AC;
+                    /* Shadow */
+
+                    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.04);
+
+                    position: absolute;
+                    width: 259px;
+                    height: 48px;
+                }
+            }
+        }
     }
 }

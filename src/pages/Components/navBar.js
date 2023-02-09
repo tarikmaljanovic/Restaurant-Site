@@ -6,25 +6,30 @@ import basket from '@/styles/Images/Vector.png'
 
 export default function NavBar() {
     return (
-        <div className='header'>
-            <div class='container is-fluid px-0'>
+        <>
+        <div class='header'>
+            <div class='container is-fluid'>
                 <div class='columns'>
-                     <div class='column is-4 has-text-centered'>
-                        <img src={logo.src} alt='Logo'></img>
-                    </div>
-                    <div class='column is-4 has-text-centered'>
-                         <ul className={styles.options}>
-                            <li className={styles.activeOpt}>HEM</li>
-                            <li>MENY</li>
-                            <li>OM OSS</li>
-                            <li>KONTAKT</li>
-                         </ul>
-                    </div>
-                    <div class='column is-4 has-text-centered'>
-                        <div class="button"><img src={basket.src} alt='Basket' className={styles.basket}></img>BESTÄLL TAKEAWAY</div>
-                    </div>
+                    <div class='column is-4'>
+                        <img src={logo.src} alt='logo'></img>
+                    </div> 
+                    <div class='column is-4'>
+                        <ul class='options'>
+                            <li class='hem'>HEM</li>
+                            <li class='meny'>MENY</li>
+                            <li class='om-oss'>OM OSS</li>
+                            <li class='kontakt'>KONTAKT</li>
+                        </ul>
+                    </div> 
+                    <div class='column is-4'>
+                        <button class='button'>
+                            <img src={basket.src} alt='basket'></img>
+                            <p>BESTÄLL TAKEAWAY</p>
+                        </button>
+                    </div> 
                 </div>
             </div>
         </div>
+        </>
     )
 }
