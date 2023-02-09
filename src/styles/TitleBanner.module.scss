@@ -74,6 +74,12 @@
                 background: #FFFFFF;
                 border-radius: 100px;
                 transform: rotate(180deg);
+                display: flex;
+                align-self: center;
+                img {
+                    width: 12px;
+                    height: 8px;
+                }
             }
         }
     }
@@ -125,4 +131,6 @@
     line-height: 15px;
 }
 
-
+.dropdown-content {
+    border: solid #ECD4AC 1px;
+}

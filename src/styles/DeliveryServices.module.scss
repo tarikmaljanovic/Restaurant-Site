@@ -2,28 +2,46 @@
 @import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap';
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
 
+
 .container {
+    font-family: 'Montserrat';
     .columns {
-        font-family: 'Montserrat';
-        h3 {
-            font-weight: 800;
-            font-size: 32px;
-            color: #000000;
+        .title {
+            h3 {
+                font-size: 40px;
+                font-weight: 800;
+                color: #000000;
+            }
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+            }
         }
-        p {
-            font-size: 16px;
-            font-weight: 400;
-        }
-        .column {
-            .notification {
-                background: #ECD4AC;
-                border-radius: 0%;
-                width: 203.52px;
-                height: 72px;
-                padding: 25px;
-                display: flex;
-                justify-content: center;
-                cursor: pointer;
+        .link {
+            .columns {
+                .column {
+                    background-color: #ECD4AC;
+                    border-radius: 0%;
+                    width: 203.52px;
+                    height: 72px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    margin: 10px;
+                    .wolt {
+                        width: 65.9px;
+                        height: 24px;
+                    }
+                    .foodora {
+                        width: 84.55px;
+                        height: 18.83px;
+                    }
+                    .waytogo {
+                        width: 107.52px;
+                        height: 15.28px;
+                    }
+                }
             }
         }
     }

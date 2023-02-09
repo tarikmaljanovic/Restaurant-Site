@@ -9,6 +9,7 @@ import backgroundImg from '@/styles/Images/background.png'
 import phone from '@/styles/Images/phone.png'
 import basket from '@/styles/Images/Vector.png'
 import WorkingHours from './workingHours'
+import arrow from '@/styles/Images/arrow.png'
 
 export default function TitleBanner() {
     const [menuState, setMenuState] = useState(false);
@@ -39,12 +40,12 @@ export default function TitleBanner() {
                                             <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2" onClick={() => setMenuState(!menuState)}>
                                             <span>IDAG: 08:00-16:00</span>
                                             <span class="icon is-small">
-                                                <i class="fas fa-angle-down"></i>
+                                                <img src={arrow.src} className={styles.arrow}></img>
                                             </span>
                                             </button>
                                         </div>
                                         <div class="dropdown-menu" id="dropdown-menu2" role="menu">
-                                            <div class="dropdown-content">
+                                            <div class="dropdown-content p-0">
                                                 <WorkingHours />
                                             </div>
                                         </div>
