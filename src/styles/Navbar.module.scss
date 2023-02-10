@@ -20,9 +20,6 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                .logo {
-
-                }
                 .options {
                     /* Auto layout */
 
@@ -155,6 +152,7 @@
                     position: absolute;
                     width: 259px;
                     height: 48px;
+                    border-radius: 0%;
                 }
             }
         }

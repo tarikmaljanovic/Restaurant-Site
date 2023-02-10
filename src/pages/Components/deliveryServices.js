@@ -10,27 +10,27 @@ export default function DeliveryServices() {
         <section class="hero is-medium">
             <div class="hero-body">
                 <div class='container'>
-                    <div class='columns'>
+                    <div class='columns is-align-content-baseline'>
                         <div class='column left-title'>
                             <h3>Beställ hemkörning</h3>
                             <p>Du kan beställa vår mat för hemkörning genom följande tjänster.</p>
                         </div>
-                        <div class='column'>
+                        <div class='column is-justify-content-right'>
                             <div class='columns right-links'>
                                 <div class='column'>
-                                    <div class='notification wolt'>
+                                    <a href='https://wolt.com/sv/swe/vasteras/restaurant/hrnet'><div class='notification wolt'>
                                         <img src={wolt.src} alt='wolt'></img>
-                                    </div>
+                                    </div></a>
                                 </div>
                                 <div class='column'>
-                                    <div class='notification foodora'>
+                                    <a href='https://www.foodora.se/restaurant/wuvx/hornet-vasteras'><div class='notification foodora'>
                                         <img src={foodora.src} alt='foodora'></img>
-                                    </div>
+                                    </div></a>
                                 </div>
                                 <div class='column'>
-                                    <div class='notification waytogo'>
+                                    <a href='https://waytogo.se/restauranger/mat/hornet-vasteras'><div class='notification waytogo'>
                                         <img src={waytogo.src} alt='waytogo'></img>
-                                    </div>
+                                    </div></a>
                                 </div>
                             </div>
                         </div>
