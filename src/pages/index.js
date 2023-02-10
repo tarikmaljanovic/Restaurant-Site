@@ -12,6 +12,8 @@ export default function Home() {
     <div className='view'>
         <NavBar />
         <TitleBanner />
+        <DeliveryServices />
+        <Gallery />
     </div>
   )
 }

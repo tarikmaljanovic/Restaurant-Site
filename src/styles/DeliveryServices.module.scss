@@ -2,47 +2,155 @@
 @import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap';
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
 
+.hero-body {
+    .container {
+         .columns {
+            .left-title {
+                /* Auto layout */
+    
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+    
+                padding: 0px;
+                gap: 16px;
+                width: 546px;
+                height: 84px;
+    
+                /* Inside auto layout */
+    
+                flex: none;
+                order: 0;
+                flex-grow: 0; 
+                h3 {
+                    /* Beställ hemkörning */
+    
+                    width: 546px;
+                    height: 40px;
+    
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 32px;
+                    line-height: 40px;
+                    /* identical to box height, or 125% */
+    
+    
+                    /* Color / Black */
+    
+                    color: #000000;
+    
+    
+                    /* Inside auto layout */
+    
+                    flex: none;
+                    order: 0;
+                    flex-grow: 0;
+                }
+                p {
+                    /* Du kan beställa vår mat för hemkörning genom följande tjänster. */
+    
+                    width: 546px;
+                    height: 28px;
+    
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    /* identical to box height, or 175% */
+    
+    
+                    /* Color / Black */
+    
+                    color: #000000;
+    
+                    /* Inside auto layout */
+    
+                    flex: none;
+                    order: 1;
+                    flex-grow: 0;
+                }
+            }
+            .right-links{
+                .wolt {
+                    /* Frame 2 */
 
-.container {
-    font-family: 'Montserrat';
-    .columns {
-        .title {
-            h3 {
-                font-size: 40px;
-                font-weight: 800;
-                color: #000000;
-            }
-            p {
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 28px;
-            }
-        }
-        .link {
-            .columns {
-                .column {
-                    background-color: #ECD4AC;
-                    border-radius: 0%;
+                    /* Auto layout */
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 24px 48px;
+                    gap: 10px;
+
+                    width: 161.9px;
+                    height: 72px;
+
+                    /* Color / Primary */
+
+                    background: #ECD4AC;
+
+                    /* Inside auto layout */
+
+                    flex: none;
+                    order: 0;
+                    flex-grow: 0;
+                }
+                .foodora {
+                    /* Frame 2 */
+
+                    /* Auto layout */
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 24px 48px;
+                    gap: 10px;
+
+                    width: 180.55px;
+                    height: 72px;
+
+                    /* Color / Primary */
+
+                    background: #ECD4AC;
+
+                    /* Inside auto layout */
+
+                    flex: none;
+                    order: 1;
+                    flex-grow: 0;
+                }
+                .waytogo {
+                    /* Frame 2 */
+
+                    /* Auto layout */
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 24px 48px;
+                    gap: 10px;
+
                     width: 203.52px;
                     height: 72px;
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-                    margin: 10px;
-                    .wolt {
-                        width: 65.9px;
-                        height: 24px;
-                    }
-                    .foodora {
-                        width: 84.55px;
-                        height: 18.83px;
-                    }
-                    .waytogo {
-                        width: 107.52px;
-                        height: 15.28px;
-                    }
+
+                    /* Color / Primary */
+
+                    background: #ECD4AC;
+
+                    /* Inside auto layout */
+
+                    flex: none;
+                    order: 2;
+                    flex-grow: 0;
                 }
             }
         }
-    }
+    }     
 }
+
+

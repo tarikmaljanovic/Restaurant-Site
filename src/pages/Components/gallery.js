@@ -11,8 +11,8 @@ import img6 from '@/styles/Images/GalleryImages/img6.png'
 export default function Galery() {
     return(
         <>
-            <section class="hero is-medium">
-                <div class="hero-body px-0 py-6">
+            <section class="hero is-small">
+                <div class="hero-body px-0 py-0">
                     <div class='container is-fluid m-0 p-0'>
                         <div class='columns is-gapless'>
                             <div class='column'>
