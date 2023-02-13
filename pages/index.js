@@ -1,9 +1,9 @@
 import { Inter } from '@next/font/google'
-import NavBar from './Components/navBar'
-import TitleBanner from './Components/titleBanner'
-import DeliveryServices from './Components/deliveryServices'
-import Gallery from './Components/gallery'
-import Menu from './Components/menu'
+import NavBar from 'components/navBar.js'
+import TitleBanner from 'components/titleBanner.js'
+import DeliveryServices from 'components/deliveryServices.js'
+import Gallery from 'components/gallery.js'
+import Menu from 'components/menu.js'
 
 const inter = Inter({ subsets: ['latin'] })
 

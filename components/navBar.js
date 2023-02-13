@@ -1,8 +1,8 @@
 import { Inter } from '@next/font/google'
-import styles from '@/styles/Navbar.module.scss'
+import styles from 'styles/navbar.module.scss'
 import { render } from 'react-dom'
-import logo from '@/styles/Images/Logo.png'
-import basket from '@/styles/Images/Vector.png'
+import logo from 'public/images/Logo.png'
+import basket from 'public/icons/basket.png'
 
 export default function NavBar() {
     return (

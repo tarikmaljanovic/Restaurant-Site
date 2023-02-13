@@ -1,21 +1,21 @@
 import { render } from 'react-dom'
 import { Inter } from '@next/font/google'
-import styles from '@/styles/DeliveryServices.module.scss'
-import wolt from '@/styles/Images/wolt.png'
-import foodora from '@/styles/Images/foodora.png'
-import waytogo from '@/styles/Images/waytogo.png'
+import styles from 'styles/deliveryServices.module.scss'
+import wolt from 'public/images/delivery ServicesImages/wolt.png'
+import foodora from 'public/images/delivery ServicesImages/foodora.png'
+import waytogo from 'public/images/delivery ServicesImages/waytogo.png'
 
 export default function DeliveryServices() {
     return (
-        <section class="hero is-medium">
-            <div class="hero-body">
+        <section class="hero is-small">
+            <div class="hero-body m-6">
                 <div class='container'>
-                    <div class='columns is-align-content-baseline'>
+                    <div class='columns'>
                         <div class='column left-title'>
                             <h3>Beställ hemkörning</h3>
                             <p>Du kan beställa vår mat för hemkörning genom följande tjänster.</p>
                         </div>
-                        <div class='column is-justify-content-right'>
+                        <div class='column'>
                             <div class='columns right-links'>
                                 <div class='column'>
                                     <a href='https://wolt.com/sv/swe/vasteras/restaurant/hrnet'><div class='notification wolt'>

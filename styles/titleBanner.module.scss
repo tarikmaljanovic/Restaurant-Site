@@ -1,0 +1,401 @@
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap';
+@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
+
+
+.hero-body {
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    position: relative;
+    .background {
+        position: absolute;
+        opacity: 0.75;
+    }
+    .rows {
+        .row {
+            .container {
+                .columns {
+                    .column {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .bannerImg {
+                            height: auto;
+                            width: 100%;
+                            display:block;
+                        }
+                        .bannerTitle {
+                        /* Hörnet & Västerås */
+                        width: 464px;
+                        height: 174px;
+
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 800;
+                        font-size: 92px;
+                        line-height: 87px;
+                        /* or 95% */
+
+
+                        /* Color / Black */
+
+                        color: #000000;
+
+
+                        /* Inside auto layout */
+
+                        flex: none;
+                        order: 0;
+                        flex-grow: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .info-cards-row {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: -90px;
+            .info-cards {
+                .column {
+                    .hours {
+                        /* Rectangle 14 */
+                        box-sizing: border-box;
+
+
+                        height: 157px;
+                        width: 318px;
+
+
+                        background: #FFFFFF;
+                        border: 1px solid #ECD4AC;
+                        border-radius: 3px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-direction: column;
+                        
+                        .dropdown-trigger {
+                            .button {
+                            /* Frame 11 */
+
+                            /* Auto layout */
+
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            padding: 10px 12px 8px 16px;
+                            gap: 6px;
+
+                            width: 195px;
+                            height: 42px;
+
+                            /* Color / Primary */
+
+                            background: #ECD4AC;
+                            border-radius: 0%;
+                            .button-content {
+                                /* Monday – Friday */
+
+
+                                width: 137px;
+                                height: 24px;
+
+                                font-family: 'Montserrat';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 24px;
+                                /* identical to box height, or 171% */
+
+                                text-transform: uppercase;
+
+                                /* Color / Black */
+
+                                color: #000000;
+
+
+                                /* Inside auto layout */
+
+                                flex: none;
+                                order: 0;
+                                flex-grow: 0;
+                            }
+                            }
+                        }
+                        p {
+                            /* Öppettider */
+
+                            width: 94px;
+                            height: 14px;
+
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 14px;
+                            /* identical to box height, or 100% */
+
+                            text-align: center;
+                            text-transform: uppercase;
+
+                            /* Color / Grey */
+
+                            color: #918E89;
+                        }
+                    }
+                    .location {
+                        /* Rectangle 14 */
+
+                        box-sizing: border-box;
+
+                        height: 157px;
+                        width: 318px;
+
+                        background: #FFFFFF;
+                        border: 1px solid #ECD4AC;
+                        border-radius: 3px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-direction: column;
+
+                        .address-label {
+                            /* ADRESS */
+
+
+                            width: 60px;
+                            height: 14px;
+
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 14px;
+                            /* identical to box height, or 100% */
+
+                            text-align: center;
+
+                            /* Color / Grey */
+
+                            color: #918E89;
+
+
+                            /* Inside auto layout */
+
+                            flex: none;
+                            order: 0;
+                            flex-grow: 0;
+                        }
+                        .address {
+                            /* Krankroksgatan 7, 721 38 */
+
+
+                            width: 229px;
+                            height: 22px;
+
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 17px;
+                            line-height: 22px;
+                            /* identical to box height */
+
+                            text-align: center;
+
+                            /* Color / Black */
+
+                            color: #000000;
+
+
+                            /* Inside auto layout */
+
+                            flex: none;
+                            order: 1;
+                            flex-grow: 0;
+                        }
+                    }
+                    .phone {
+                        /* Rectangle 14 */
+
+                        box-sizing: border-box;
+
+                        height: 157px;
+                        width: 318px;
+
+                        background: #FFFFFF;
+                        border: 1px solid #ECD4AC;
+                        border-radius: 3px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-direction: column;
+                        .phonenumber-label {
+                            /* TELEFONNUMMER */
+
+
+                            width: 137px;
+                            height: 14px;
+
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 14px;
+                            /* identical to box height, or 100% */
+
+                            text-align: center;
+
+                            /* Color / Grey */
+
+                            color: #918E89;
+
+
+                            /* Inside auto layout */
+
+                            flex: none;
+                            order: 0;
+                            flex-grow: 0;
+                        }
+                        .phonenumber {
+                            /* 076 027 41 51 */
+
+                            width: 119px;
+                            height: 22px;
+
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 17px;
+                            line-height: 22px;
+                            /* identical to box height */
+
+                            text-align: center;
+
+                            /* Color / Black */
+
+                            color: #000000;
+
+
+                            /* Inside auto layout */
+
+                            flex: none;
+                            order: 1;
+                            flex-grow: 0;
+                        }
+                    }
+                    .takeaway {
+                        /* Rectangle 14 */
+
+                        box-sizing: border-box;
+
+
+                        height: 157px;
+                        width: 318px;
+
+                        background: #ECD4AC;
+                        border: 1px solid #ECD4AC;
+                        border-radius: 3px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-direction: column;
+                        .takeaway-label {
+                            /* TAKEAWAY? */
+
+
+
+                            width: 104px;
+                            height: 20px;
+                            left: calc(50% - 104px/2);
+
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 20px;
+                            /* identical to box height */
+
+                            text-align: center;
+
+                            /* Color / Black */
+
+                            color: #000000;
+                        }
+                        .order-takeaway {
+                            /* Beställ takeaway från oss! */
+
+                            
+                            width: 188px;
+                            height: 17px;
+                            
+
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 13px;
+                            line-height: 17px;
+                            /* identical to box height */
+
+                            text-align: center;
+
+                            /* Color / Black */
+
+                            color: #000000;
+                        }
+                        .button {
+                            /* Frame 6 */
+
+                            /* Auto layout */
+
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 12px 8px;
+                            gap: 10px;
+
+                                                        
+                            width: 228px;
+                            height: 48px;
+
+
+                            background: #FFFFFF;
+                            /* Shadow */
+
+                            box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.04);
+                            border-radius: 0%;
+                            .order-button-label {
+                                /* UTOPIA YOGA STUDIO */
+
+                                width: 153px;
+                                height: 17px;
+
+                                font-family: 'Montserrat';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 17px;
+                                /* identical to box height */
+
+
+                                /* Color / Black */
+
+                                color: #000000;
+
+
+                                /* Inside auto layout */
+
+                                flex: none;
+                                order: 1;
+                                flex-grow: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
