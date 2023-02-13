@@ -4,6 +4,7 @@ import TitleBanner from 'components/titleBanner.js'
 import DeliveryServices from 'components/deliveryServices.js'
 import Gallery from 'components/gallery.js'
 import Menu from 'components/menu.js'
+import TakeawayBanner from 'components/takeawayBanner'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,6 +15,8 @@ export default function Home() {
         <TitleBanner />
         <DeliveryServices />
         <Gallery />
+        <Menu />
+        <TakeawayBanner />
     </div>
   )
 }

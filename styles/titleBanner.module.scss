@@ -4,10 +4,9 @@
 
 
 .hero-body {
-    overflow: hidden;
     left: 0;
     right: 0;
-    position: relative;
+    
     .background {
         position: absolute;
         opacity: 0.75;
@@ -23,7 +22,9 @@
                         .bannerImg {
                             height: auto;
                             width: 100%;
+
                             display:block;
+                            
                         }
                         .bannerTitle {
                         /* Hörnet & Västerås */
@@ -57,7 +58,7 @@
             display: flex;
             justify-content: center;
             position: relative;
-            top: -90px;
+            top: -80px;
             .info-cards {
                 .column {
                     .hours {
@@ -122,7 +123,17 @@
                                 flex: none;
                                 order: 0;
                                 flex-grow: 0;
-                            }
+
+                                }
+                                .icon {
+                                    .arrow-{
+                                        transition: .3s; 
+                                    }
+                                    .arrow-is-active {
+                                        transition: .3s ease-in-out;
+                                        transform: rotate(180deg);
+                                    }
+                                }
                             }
                         }
                         p {

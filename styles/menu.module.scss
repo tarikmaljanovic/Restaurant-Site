@@ -1,2 +1,147 @@
 @import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap';
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
+
+.menu-hero-body {
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        .menu-section-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .front-title {
+                /* Meny */
+
+                width: 70px;
+                height: 29px;
+
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 24px;
+                line-height: 29px;
+
+                /* Color / Black */
+
+                color: #000000;
+            }
+            .back-title {
+                /* Meny */
+
+                width: 157px;
+                height: 66px;
+
+
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 54px;
+                line-height: 140px;
+                /* identical to box height */
+
+                text-align: center;
+
+                /* Color / Black */
+
+                color: #000000;
+
+                opacity: 0.05;
+            }
+        }
+        .menu-section-navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .menu-section-option-active {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                padding: 12px 24px;
+                gap: 10px;
+                width: 104px;
+                height: 41px;
+                background: #ECD4AC;
+                cursor: pointer;
+            }
+            .menu-section-option-inactive {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                padding: 12px 24px;
+                gap: 10px;
+                width: 104px;
+                height: 41px;
+                background: #FFFFFF;
+                cursor: pointer;
+            }
+            .navbar-label-active{
+                width: 56px;
+                height: 17px;
+
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                /* identical to box height */
+
+
+                /* Color / Black */
+
+                color: #000000;
+
+
+                /* Inside auto layout */
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+            }
+            .navbar-label-inactive {
+                position: absolute;
+                width: 39px;
+                height: 17px;
+
+
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                /* identical to box height */
+
+
+                /* Color / Black */
+
+                color: #000000;
+            }
+            .navbar-divider {
+                width: 100%;
+                height: 2px;
+                position: absolute;
+                bottom: 35px;
+            }
+        }
+        .menu-section-category-label {
+            width: 118px;
+            height: 29px;
+            left: calc(50% - 118px/2);
+            top: 1820px;
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 29px;
+
+            /* Color / Black */
+
+            color: #000000;
+        }
+    }
+}

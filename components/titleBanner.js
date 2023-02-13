@@ -26,7 +26,7 @@ export default function TitleBanner() {
                                 <div class='column'>
                                     <p class='bannerTitle'>Hörnet & <br/>Västerås</p>
                                 </div>
-                                <div class='column'>
+                                <div class='column p-0'>
                                     <img src={titleBannerImg.src} alt='bannerImg' class='bannerImg'></img>
                                 </div>
                             </div>
@@ -43,11 +43,13 @@ export default function TitleBanner() {
                                         <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2" onClick={() => setMenuState(!menuState)}>
                                         <span class='button-content'>IDAG: 08:00 - 16:00</span>
                                         <span class="icon is-small">
-                                            <img src={arrow.src} alt='arrow-icon'></img>
+                                            <img src={arrow.src} alt='arrow-icon' className={`arrow-${visibilityCheck}`}></img>
                                         </span>
                                         </button>
                                     </div>
+                                    <div class="dropdown-menu" id="dropdown-menu2" role="menu">
                                         <WorkingHours />
+                                    </div>
                                     </div>
                                 </div>
                             </div>
