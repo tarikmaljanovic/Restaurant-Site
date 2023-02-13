@@ -13,7 +13,7 @@ export default function DeliveryServices() {
                     <div class='columns'>
                         <div class='column left-title'>
                             <h3>Beställ hemkörning</h3>
-                            <p>Du kan beställa vår mat för hemkörning genom följande tjänster.</p>
+                            <p>Du kan beställa vår mat för hemkörning genom följande tjänster........</p>
                         </div>
                         <div class='column'>
                             <div class='columns right-links'>
