@@ -2,3 +2,35 @@
 @import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap';
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
 
+
+.dropdown-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .dropdown-rows {
+        .section-1 {
+            .section-1-label {
+                /* ÖPPET IDAG: */
+
+                width: 216px;
+                height: 16px;
+
+
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 16px;
+                color: #000000;
+                /* identical to box height, or 114% */
+
+                text-align: center;
+
+                /* Color / Black */
+
+                
+            }
+        }
+    }
+}

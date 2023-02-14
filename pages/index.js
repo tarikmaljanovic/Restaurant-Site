@@ -5,6 +5,8 @@ import DeliveryServices from 'components/deliveryServices.js'
 import Gallery from 'components/gallery.js'
 import Menu from 'components/menu.js'
 import TakeawayBanner from 'components/takeawayBanner'
+import AboutUs from 'components/aboutUs'
+import InformationSection from 'components/informationSection'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +19,8 @@ export default function Home() {
         <Gallery />
         <Menu />
         <TakeawayBanner />
+        <AboutUs />
+        <InformationSection />
     </div>
   )
 }

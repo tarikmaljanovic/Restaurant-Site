@@ -22,9 +22,7 @@
                         .bannerImg {
                             height: auto;
                             width: 100%;
-
                             display:block;
-                            
                         }
                         .bannerTitle {
                         /* Hörnet & Västerås */
@@ -77,64 +75,66 @@
                         justify-content: space-between;
                         align-items: center;
                         flex-direction: column;
-                        
-                        .dropdown-trigger {
-                            .button {
-                            /* Frame 11 */
+                        .dropdown {
+                            .dropdown-trigger {
+                                .button {
+                                /* Frame 11 */
 
-                            /* Auto layout */
+                                /* Auto layout */
 
-                            display: flex;
-                            flex-direction: row;
-                            align-items: center;
-                            padding: 10px 12px 8px 16px;
-                            gap: 6px;
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                padding: 10px 12px 8px 16px;
+                                gap: 6px;
 
-                            width: 195px;
-                            height: 42px;
+                                width: 195px;
+                                height: 42px;
 
-                            /* Color / Primary */
+                                /* Color / Primary */
 
-                            background: #ECD4AC;
-                            border-radius: 0%;
-                            .button-content {
-                                /* Monday – Friday */
-
-
-                                width: 137px;
-                                height: 24px;
-
-                                font-family: 'Montserrat';
-                                font-style: normal;
-                                font-weight: 700;
-                                font-size: 14px;
-                                line-height: 24px;
-                                /* identical to box height, or 171% */
-
-                                text-transform: uppercase;
-
-                                /* Color / Black */
-
-                                color: #000000;
+                                background: #ECD4AC;
+                                border-radius: 0%;
+                                .button-content {
+                                    /* Monday – Friday */
 
 
-                                /* Inside auto layout */
+                                    width: 137px;
+                                    height: 24px;
 
-                                flex: none;
-                                order: 0;
-                                flex-grow: 0;
+                                    font-family: 'Montserrat';
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 14px;
+                                    line-height: 24px;
+                                    /* identical to box height, or 171% */
 
-                                }
-                                .icon {
-                                    .arrow-{
-                                        transition: .3s; 
+                                    text-transform: uppercase;
+
+                                    /* Color / Black */
+
+                                    color: #000000;
+
+
+                                    /* Inside auto layout */
+
+                                    flex: none;
+                                    order: 0;
+                                    flex-grow: 0;
+
                                     }
-                                    .arrow-is-active {
-                                        transition: .3s ease-in-out;
-                                        transform: rotate(180deg);
+                                    .icon {
+                                        .arrow-{
+                                            transition: .3s; 
+                                        }
+                                        .arrow-is-active {
+                                            transition: .3s ease-in-out;
+                                            transform: rotate(180deg);
+                                        }
                                     }
                                 }
                             }
+                            
                         }
                         p {
                             /* Öppettider */

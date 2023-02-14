@@ -34,6 +34,9 @@ export default function Menu() {
                         <hr class='navbar-divider'/>
                     </div>
                     <h2 class='menu-section-category-label'>Category</h2>
+                    <div class='columns menu-section-body'>
+                       
+                    </div>
                 </div>
             </div>
         </section>

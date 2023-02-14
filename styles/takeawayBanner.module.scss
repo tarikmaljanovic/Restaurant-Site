@@ -1,3 +1,117 @@
 @import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap';
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
 
+.takeawayBanner-hero {
+    .takeawayBanner {
+        .takeawayBanner-container {
+            background: linear-gradient(0deg, #ECD4AC, #ECD4AC), #000000;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            .takeaway-background {
+                opacity: 0.75;
+                mix-blend-mode: color;
+                position: absolute;
+                display: block;
+                height: 100%;
+            }
+            .takeaway-label {
+                /* TAKEAWAY? */
+
+                width: 660px;
+                height: 20px;
+
+
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                /* identical to box height */
+
+                text-align: center;
+
+                /* Color / Shade 2 */
+
+                color: #A98456;
+
+            }
+            .takeaway-title {
+                
+                width: 660px;
+                height: 49px;
+
+
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 40px;
+                line-height: 49px;
+                /* identical to box height */
+
+                text-align: center;
+
+                /* Color / Black */
+
+                color: #000000;
+            }
+            .takeaway-subtitle {
+
+
+                width: 660px;
+                height: 24px;
+
+
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                /* identical to box height, or 150% */
+
+                text-align: center;
+
+                /* Color / Black */
+
+                color: #000000;
+            }
+            .takeaway-button {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 12px 26px;
+                gap: 10px;
+
+                width: 315px;
+                height: 48px;
+
+
+                /* Color / White */
+
+                background: #FFFFFF;
+                border-radius: 0;
+                .button-label {
+
+                height: 20px;
+
+                right: 17.14%;
+
+
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                /* identical to box height */
+
+
+                /* Color / Black */
+
+                color: #000000;
+                }
+            }
+        }
+    }
+}

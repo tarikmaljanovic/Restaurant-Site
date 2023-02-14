@@ -6,17 +6,19 @@ import alert from 'public/icons/alert.png'
 export default function WorkingHours() {
     return(
         <>
-                <div class="dropdown-content">
-                <div class="dropdown-item">
-                    <p>ORDINARIE ÖPPETTIDER</p>
+            <div class="dropdown-content">
+                <div class='rows dropdown-rows'>
+                    <div class='row section-1'>
+                        <p class='section-1-label'>ORDINARIE ÖPPETTIDER</p>
+                    </div>
+                    <div class='row section-2'>
+                        
+                    </div>
+                    <div class='row section-3'>
+
+                    </div>
                 </div>
-                <hr class="dropdown-divider"/>
-                <div class="dropdown-item">
-                <p>ORDINARIE ÖPPETTIDER</p>
-                </div>
-                <hr class="dropdown-divider"/>
-                <p>ORDINARIE ÖPPETTIDER</p>
-                </div>
+            </div>
         </>
     )
 }

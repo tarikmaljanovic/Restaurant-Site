@@ -1,0 +1,169 @@
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap';
+@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
+
+.info-hero {
+    .info-container {
+        .info-columns {
+            .info-left {
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-direction: column;
+                .info-label {                 
+                    width: 318px;
+                    height: 20px;
+
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 20px;
+                    /* identical to box height */
+
+
+                    /* Color / Shade 2 */
+
+                    color: #A98456;
+                }
+                .info-content {
+                    width: 318px;
+                    height: 20px;
+
+
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    /* identical to box height */
+
+
+                    /* Color / Black */
+
+                    color: #000000;
+                }
+                .workinghours {
+                    display: flex;
+                    flex-direction: column;
+                    .workinghours-label {
+                        width: 318px;
+                        height: 20px;
+
+
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 20px;
+                        /* identical to box height */
+
+
+                        /* Color / Shade 2 */
+
+                        color: #A98456;
+                    }
+                    .days {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        .day {
+                            .day-label {
+                                width: 114px;
+                                height: 20px;
+                                margin: 2px;
+
+                                font-family: 'Montserrat';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 20px;
+                                /* identical to box height */
+
+
+                                /* Color / Black */
+
+                                color: #000000;
+                            }
+                            .day-time {
+                                width: 112px;
+                                height: 20px;
+
+
+                                font-family: 'Montserrat';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 20px;
+                                /* identical to box height */
+
+
+                                /* Color / Black */
+
+                                color: #000000;
+                            }
+                        }
+                        
+                    }
+                }
+                .special-workinghours {
+                    .special-label {
+                        /* Avvikande öppettider */
+
+                        width: 318px;
+                        height: 20px;
+
+
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 20px;
+                        /* identical to box height */
+
+
+                        /* Color / Shade 2 */
+
+                        color: #A98456;
+                    }
+                    .special-date {
+                        width: 114px;
+                        height: 20px;
+
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 20px;
+                        /* identical to box height */
+
+
+                        /* Color / Black */
+
+                        color: #000000;
+                    }
+                    .special-time {
+                        width: 112px;
+                        height: 20px;
+
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 20px;
+                        /* identical to box height */
+
+
+                        /* Color / Black */
+
+                        color: #000000;
+                    }
+                }
+            }
+            .info-right {
+                .info-map {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
