@@ -17,30 +17,31 @@ export default function TitleBanner() {
 
     return(
         <>
-        <div class="hero-body p-0">
-        <img src={backgroundImg.src} alt='background' class='background'></img>
-            <div class='rows'>
-                <div class='row'>
-                        <div class='container is-fluid p-0'>
-                            <div class='columns'>
-                                <div class='column'>
+        <section class="hero is-large">
+            <div class="hero-body titleBanner-hero p-0">
+                <div class='rows titleBanner-rows'>
+                    <div class='row titleBanner-head'>
+                    <img src={backgroundImg.src} class='titleBanner-background'></img>
+                        <div class='container px-0 is-fluid titleBanner-head-container'>
+                            <div class='columns titleBanner-head-columns'>
+                                <div class='column p-0 titleBanner-head-column'>
                                     <p class='bannerTitle'>Hörnet & <br/>Västerås</p>
                                 </div>
-                                <div class='column p-0'>
+                                <div class='column p-0 titleBanner-head-column'>
                                     <img src={titleBannerImg.src} alt='bannerImg' class='bannerImg'></img>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class='row info-cards-row'>
-                        <div class='columns info-cards'>
-                            <div class='column'>
+                    <div class='row infocards-row'>
+                        <div class='columns infocards-columns'>
+                            <div class='column infocard-hours'>
                                 <div class='notification hours'>
                                     <img src={clock.src} alt='clock' class='clock-icon'></img>
                                     <p>Öppettider</p>
                                     <div className={`dropdown ${visibilityCheck}`}>
                                     <div class="dropdown-trigger">
-                                        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2" onClick={() => setMenuState(!menuState)}>
+                                        <button class="button " aria-haspopup="true" aria-controls="dropdown-menu2" onClick={() => setMenuState(!menuState)}>
                                         <span class='button-content'>IDAG: 08:00 - 16:00</span>
                                         <span class="icon is-small">
                                             <img src={arrow.src} alt='arrow-icon' className={`arrow-${visibilityCheck}`}></img>
@@ -71,7 +72,7 @@ export default function TitleBanner() {
                                 <div class='notification takeaway'>
                                     <p class='takeaway-label'>TAKEAWAY?</p>
                                     <p class='order-takeaway'>Beställ takeaway från oss!</p>
-                                    <button class='button'>
+                                    <button class='button takeaway-button'>
                                         <img src={basket.src} alt='basket'></img>
                                         <p class='order-button-label'>BESTÄLL TAKEAWAY</p>
                                     </button>
@@ -81,6 +82,8 @@ export default function TitleBanner() {
                     </div>
                 </div>
             </div>
+        </section>
         </>
     )
 }
+        

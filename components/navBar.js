@@ -7,13 +7,13 @@ import basket from 'public/icons/basket.png'
 export default function NavBar() {
     return (
         <>
-        <div class='header'>
-            <div class='container is-fluid'>
-                <div class='columns'>
-                    <div class='column is-4'>
+        <div class='header navbar-header'>
+            <div class='container is-fluid navbar-container p-0'>
+                <div class='columns navbar-columns'>
+                    <div class='column is-4 navbar-logo'>
                         <img src={logo.src} alt='logo'></img>
                     </div> 
-                    <div class='column is-4'>
+                    <div class='column is-4 navbar-options'>
                         <ul class='options'>
                             <li class='hem'>HEM</li>
                             <li class='meny'>MENY</li>
@@ -21,8 +21,8 @@ export default function NavBar() {
                             <li class='kontakt'>KONTAKT</li>
                         </ul>
                     </div> 
-                    <div class='column is-4'>
-                        <button class='button'>
+                    <div class='column is-4 navbar-button'>
+                        <button class='button navbar-orderButton'>
                             <img src={basket.src} alt='basket'></img>
                             <p>BESTÄLL TAKEAWAY</p>
                         </button>

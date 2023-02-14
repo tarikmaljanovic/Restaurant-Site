@@ -6,48 +6,50 @@
         .info-columns {
             .info-left {
                     display: flex;
-                    justify-content: space-evenly;
+                    justify-content: center;
                     flex-direction: column;
-                .info-label {                 
-                    width: 318px;
-                    height: 20px;
+                    .info-label-container{
+                        .info-label {                 
+                            width: 318px;
+                            height: 20px;
 
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 16px;
-                    line-height: 20px;
-                    /* identical to box height */
-
-
-                    /* Color / Shade 2 */
-
-                    color: #A98456;
-                }
-                .info-content {
-                    width: 318px;
-                    height: 20px;
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 20px;
+                            /* identical to box height */
 
 
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 20px;
-                    /* identical to box height */
+                            /* Color / Shade 2 */
+
+                            color: #A98456;
+                        }
+                        .info-content {
+                            width: 318px;
+                            height: 20px;
 
 
-                    /* Color / Black */
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 20px;
+                            /* identical to box height */
 
-                    color: #000000;
-                }
+
+                            /* Color / Black */
+
+                            color: #000000;
+                        }
+                    }
+
                 .workinghours {
                     display: flex;
                     flex-direction: column;
                     .workinghours-label {
                         width: 318px;
                         height: 20px;
-
 
                         font-family: 'Montserrat';
                         font-style: normal;

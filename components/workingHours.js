@@ -11,6 +11,30 @@ export default function WorkingHours() {
                     <div class='row section-1'>
                         <p class='section-1-label'>ORDINARIE ÖPPETTIDER</p>
                     </div>
+                    <div class='row section-1'>
+                        <p class='section-1-label'>ORDINARIE ÖPPETTIDER</p>
+                    </div>
+                    <div class='row section-1'>
+                        <p class='section-1-label'>ORDINARIE ÖPPETTIDER</p>
+                    </div>
+                    <div class='row section-1'>
+                        <p class='section-1-label'>ORDINARIE ÖPPETTIDER</p>
+                    </div>
+                    <div class='row section-1'>
+                        <p class='section-1-label'>ORDINARIE ÖPPETTIDER</p>
+                    </div>
+                    <div class='row section-1'>
+                        <p class='section-1-label'>ORDINARIE ÖPPETTIDER</p>
+                    </div>
+                    <div class='row section-1'>
+                        <p class='section-1-label'>ORDINARIE ÖPPETTIDER</p>
+                    </div>
+                    <div class='row section-1'>
+                        <p class='section-1-label'>ORDINARIE ÖPPETTIDER</p>
+                    </div>
+                    <div class='row section-1'>
+                        <p class='section-1-label'>ORDINARIE ÖPPETTIDER</p>
+                    </div>
                     <div class='row section-2'>
                         
                     </div>

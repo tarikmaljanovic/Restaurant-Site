@@ -2,27 +2,27 @@
 @import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap';
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
 
-
-.hero-body {
-    left: 0;
-    right: 0;
-    
-    .background {
-        position: absolute;
-        opacity: 0.75;
-    }
-    .rows {
-        .row {
-            .container {
-                .columns {
-                    .column {
+.hero {
+.titleBanner-hero {
+    .titleBanner-rows {
+        .titleBanner-head {
+            position: relative;
+            .titleBanner-background {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0.75;
+            }
+            .titleBanner-head-container {
+                .titleBanner-head-columns {
+                    .titleBanner-head-column {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         .bannerImg {
-                            height: auto;
+                            height: 100%;
                             width: 100%;
-                            display:block;
+                            display: block;
                         }
                         .bannerTitle {
                         /* Hörnet & Västerås */
@@ -52,12 +52,12 @@
                 }
             }
         }
-        .info-cards-row {
+        .infocards-row {
             display: flex;
             justify-content: center;
             position: relative;
             top: -80px;
-            .info-cards {
+            .infocards-columns {
                 .column {
                     .hours {
                         /* Rectangle 14 */
@@ -356,7 +356,7 @@
 
                             color: #000000;
                         }
-                        .button {
+                        .takeaway-button {
                             /* Frame 6 */
 
                             /* Auto layout */
@@ -409,4 +409,5 @@
             }
         }
     }
+}
 }

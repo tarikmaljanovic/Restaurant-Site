@@ -6,17 +6,23 @@ import map from 'public/images/map.png'
 export default function InformationSection() {
     return (
         <>
-            <section class="hero is-large">
-                <div class="hero-body info-hero">
-                    <div class='container is-fluid m-0 p-0 info-container'>
+            <section class="hero is-medium">
+                <div class="hero-body info-hero p-6">
+                    <div class='container is-fluid info-container'>
                         <div class='columns info-columns'>
                             <div class='column info-left'>
-                                <h3 class='info-label m-3'>Adress:</h3>
-                                <p class='info-content m-3'>Krankroksgatan 7, 721 38</p>
-                                <h3 class='info-label m-3'>Mailadress:</h3>
-                                <p class='info-content m-3'>info@hornetvasteras.se</p>
-                                <h3 class='info-label m-3'>Telefonnummer:</h3>
-                                <p class='info-content m-3'>+64 56 641 23 45</p>
+                                <div class=' info-label-container'>
+                                    <h3 class='info-label m-3'>Adress:</h3>
+                                    <p class='info-content m-3'>Krankroksgatan 7, 721 38</p>
+                                </div>
+                                <div class='info-label-container'>
+                                    <h3 class='info-label m-3'>Mailadress:</h3>
+                                    <p class='info-content m-3'>info@hornetvasteras.se</p>
+                                </div>
+                                <div class='info-label-container'>
+                                    <h3 class='info-label m-3'>Telefonnummer:</h3>
+                                    <p class='info-content m-3'>+64 56 641 23 45</p>
+                                </div>
                                 <div class='workinghours'>
                                     <h3 class='workinghours-label m-2'>Ordinarie öppettider:</h3>
                                     <div class='days m-3'>

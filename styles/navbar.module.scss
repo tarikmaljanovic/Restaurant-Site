@@ -1,8 +1,8 @@
 @import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap';
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
 
-.header {
-    height: 96px;
+.navbar-header {
+    height: 66px;
     left: 0;
     top: 0;
     right: 0;
@@ -17,12 +17,17 @@
     position: relative;
     z-index: 100;
     display: flex;
-    .container {
-        .columns {
-            .column {
+    .navbar-container {
+        .navbar-columns {
+            .navbar-logo {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+            }
+            .navbar-options {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 .options {
                     /* Auto layout */
 
@@ -32,7 +37,7 @@
                     padding: 0px;
                     gap: 40px;
 
-                    position: absolute;
+                    
                     width: 325px;
                     height: 17px;
                     .hem {
@@ -148,8 +153,13 @@
                         color: #918E89;
                     }
                 }
-                
-                .button {
+            }
+            
+            .navbar-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .navbar-orderButton {
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
@@ -164,7 +174,7 @@
 
                     box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.04);
 
-                    position: absolute;
+                    
                     width: 259px;
                     height: 48px;
                     border-radius: 0%;
