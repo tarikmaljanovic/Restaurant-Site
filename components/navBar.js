@@ -24,7 +24,7 @@ export default function NavBar() {
                     <div class='column is-4 navbar-button'>
                         <button class='button navbar-orderButton'>
                             <img src={basket.src} alt='basket'></img>
-                            <p>BESTÄLL TAKEAWAY</p>
+                            <p class='button-label'>BESTÄLL TAKEAWAY</p>
                         </button>
                     </div> 
                 </div>

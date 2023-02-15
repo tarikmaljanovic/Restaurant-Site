@@ -2,34 +2,142 @@
 @import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap';
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
 
+.workhours-dropdown-content {
+    border: solid #ECD4AC 1px;
+    .ordinary-workhours {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .ordinary-workhours-label {
+            width: 216px;
+            height: 16px;
 
-.dropdown-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    .dropdown-rows {
-        .section-1 {
-            .section-1-label {
-                /* ÖPPET IDAG: */
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            /* identical to box height, or 114% */
 
-                width: 216px;
-                height: 16px;
+            text-align: center;
+
+            /* Color / Black */
+
+            color: #000000;
+        }
+    }
+    .dropdown-divider {
+        border: solid #ECD4AC 1px;
+    }
+    .workinghours {
+        .day-rows {
+            .day-row {
+                display: flex;
+                justify-content: space-between;
+                .day {
+                    display: flex;
+                    justify-content: left;
+                    width: 73px;
+                    height: 24px;
+
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 24px;
+                    /* identical to box height, or 150% */
 
 
+                    /* Color / Primary */
+
+                    color: #ECD4AC;
+
+
+                    /* Inside auto layout */
+
+                    flex: none;
+                    order: 0;
+                    flex-grow: 0;
+                }
+                .time {
+                    display: flex;
+                    justify-content: right;
+
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    /* identical to box height, or 150% */
+
+
+                    /* Color / Black */
+
+                    color: #000000;
+                }
+            }
+        }
+    }
+    .dropdown-alert {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        .alert-label {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            /* identical to box height, or 114% */
+
+
+            /* Color / Black */
+
+            color: #000000;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+        }
+    }
+    .special-workhours {
+        .special-workhours-label{
+            .date {
                 font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: 600;
-                font-size: 14px;
-                line-height: 16px;
-                color: #000000;
-                /* identical to box height, or 114% */
+                font-size: 16px;
+                line-height: 24px;
+                /* identical to box height, or 150% */
 
-                text-align: center;
+
+                /* Color / Primary */
+
+                color: #ECD4AC;
+
+
+                /* Inside auto layout */
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+            }
+            .time {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                /* identical to box height, or 150% */
+
 
                 /* Color / Black */
 
-                
+                color: #000000;
             }
         }
     }

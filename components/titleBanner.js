@@ -36,7 +36,7 @@ export default function TitleBanner() {
                     <div class='row infocards-row'>
                         <div class='columns infocards-columns'>
                             <div class='column infocard-hours'>
-                                <div class='notification hours'>
+                                <div class='notification hours p-5'>
                                     <img src={clock.src} alt='clock' class='clock-icon'></img>
                                     <p>Öppettider</p>
                                     <div className={`dropdown ${visibilityCheck}`}>
@@ -55,21 +55,21 @@ export default function TitleBanner() {
                                 </div>
                             </div>
                             <div class='column'>
-                                <div class='notification location'>
+                                <div class='notification location p-5'>
                                     <img src={location.src} alt='location'></img>
                                     <p class='address-label'>ADRESS</p>
                                     <p className='address'>Krankroksgatan 7, 721 38</p>
                                 </div>
                             </div>
                             <div class='column'>
-                                <div class='notification phone'>
+                                <div class='notification phone p5'>
                                     <img src={phone.src} alt='phone'></img>
                                     <p class='phonenumber-label'>TELEFONNUMMER</p>
                                     <p class='phonenumber'>076 027 41 51</p>
                                 </div>
                             </div>
                             <div class='column'>
-                                <div class='notification takeaway'>
+                                <div class='notification takeaway p-5'>
                                     <p class='takeaway-label'>TAKEAWAY?</p>
                                     <p class='order-takeaway'>Beställ takeaway från oss!</p>
                                     <button class='button takeaway-button'>
