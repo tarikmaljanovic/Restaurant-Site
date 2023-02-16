@@ -21,10 +21,10 @@ export default function TakeawayBanner() {
                 </div>
             </div>
         </section>
-        {/* <section className="section takeaway">
+        <section className="section takeaway">
             <div className="container is-fluid">
                 <div className="inner">
-                <p class='takeaway-label m-1'>TAKEAWAY?</p>
+                    <p class='takeaway-label m-1'>TAKEAWAY?</p>
                     <h2 class='takeaway-title m-2'>Beställ takeaway från oss!</h2>
                     <p class='takeaway-subtitle m-2'>Välj vad du vill köpa och när det passar för dig att hämta upp - vi gör resten.</p>
                     <button class='button takeaway-button m-2'>
@@ -33,7 +33,7 @@ export default function TakeawayBanner() {
                     </button>
                 </div>
             </div>
-        </section> */}
+        </section>
         </>
     )
 }

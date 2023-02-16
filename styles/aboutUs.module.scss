@@ -11,10 +11,16 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+                .inner{
+                    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+                }
                 .aboutus-label {
                     display: flex;
                     justify-self: center;
-                    align-items: center;
+                    align-items: flex-start;
                     flex-direction: column;
                     .aboutus-label-back {
                         width: 223px;

@@ -117,7 +117,8 @@
     }
 }
 
-// .takeaway{
-//     background: linear-gradient(0deg, #ecd4ac, #ecd4ac), url(/_next/static/media/takeawayBannerBackground.27f846ce.png) no-repeat top center;
-//     background-blend-mode: color;
-// }
+.takeaway{
+    background: linear-gradient(0deg, #ecd4ac, #ecd4ac), url(/_next/static/media/takeawayBannerBackground.27f846ce.png) no-repeat top center;
+    background-blend-mode: color;
+    background-size: cover;
+}
