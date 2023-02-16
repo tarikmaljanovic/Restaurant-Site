@@ -6,8 +6,7 @@ import map from 'public/images/map.png'
 export default function InformationSection() {
     return (
         <>
-            <section class="hero is-medium">
-                <div class="hero-body info-hero p-6">
+            <section class="section is-medium info-section">
                     <div class='container is-fluid info-container'>
                         <div class='columns info-columns'>
                             <div class='column info-left'>
@@ -67,7 +66,6 @@ export default function InformationSection() {
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
         </>
     )

@@ -1,22 +1,16 @@
-@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
 
-.takeawayBanner-hero {
-    .takeawayBanner {
+.takeawayBanner-section {
         .takeawayBanner-container {
-            background: linear-gradient(0deg, #ECD4AC, #ECD4AC), #000000;
             display: flex;
             justify-content: space-around;
             align-items: center;
             flex-direction: column;
-            .takeaway-background {
-                opacity: 0.75;
-                mix-blend-mode: color;
-                position: absolute;
-                display: block;
-                height: 100%;
-                width: 100%;
-            }
+            padding: 20px;
+            background: linear-gradient(0deg, #ecd4ac, #ecd4ac), url(/_next/static/media/takeawayBannerBackground.27f846ce.png) no-repeat top center;
+            background-blend-mode: color;
+            background-size: cover;
             .takeaway-label {
                 /* TAKEAWAY? */
 
@@ -39,7 +33,6 @@
 
             }
             .takeaway-title {
-                
                 width: 660px;
                 height: 49px;
 
@@ -58,8 +51,6 @@
                 color: #000000;
             }
             .takeaway-subtitle {
-
-
                 width: 660px;
                 height: 24px;
 
@@ -84,6 +75,7 @@
                 align-items: center;
                 padding: 12px 26px;
                 gap: 10px;
+                transition: 0.5s ease;
 
                 width: 315px;
                 height: 48px;
@@ -113,6 +105,9 @@
                 color: #000000;
                 }
             }
+            .takeaway-button:hover {
+                background-color: #e4e3e3;
+                transition: 0.5s ease;
+            }
         }
-    }
 }

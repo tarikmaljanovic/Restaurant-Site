@@ -11,8 +11,8 @@ import img6 from 'public/images/menu/img6.png'
 export default function Menu() {
     return(
         <>
-        <section class="hero is-fullheight menu-hero">
-            <div class="hero-body menu-hero-body">
+        <section class="section is-fullheight menu-section">
+            <div class="container menu-container">
                 <div class='rows menu-rows'>
                     <div class='row menu-label'>
                         <p class='menu-label-back'>Meny</p>

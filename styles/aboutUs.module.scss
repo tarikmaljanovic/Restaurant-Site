@@ -1,8 +1,7 @@
-@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap';
-@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
 
-.aboutus-hero {
+.aboutus-section {
     .aboutus-container {
         overflow: hidden;
         .aboutus-columns {
@@ -11,10 +10,14 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+                .inner-left {
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-direction: column;
                 .aboutus-label {
                     display: flex;
                     justify-self: center;
-                    align-items: center;
+                    align-items: flex-start;
                     flex-direction: column;
                     .aboutus-label-back {
                         width: 223px;
@@ -87,6 +90,7 @@
                     color: #000000;
                 }
             }
+            }   
             .aboutus-right {
                 .aboutus-img {
                     display: block;

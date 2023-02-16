@@ -1,6 +1,7 @@
 import { Inter } from '@next/font/google'
 import styles from 'styles/navbar.module.scss'
 import { render } from 'react-dom'
+import { Link } from 'react-scroll'
 import logo from 'public/images/Logo.png'
 import basket from 'public/icons/basket.png'
 
@@ -15,17 +16,27 @@ export default function NavBar() {
                     </div> 
                     <div class='column is-4 navbar-options'>
                         <ul class='options'>
-                            <li class='hem'>HEM</li>
-                            <li class='meny'>MENY</li>
-                            <li class='om-oss'>OM OSS</li>
-                            <li class='kontakt'>KONTAKT</li>
+                            <Link to='titleBanner-hero' smooth={true} offset={0} duration={500}>
+                                <li class='hem'>HEM</li>
+                            </Link>
+                            <Link to='menu-section' smooth={true} offset={0} duration={500}>
+                                <li class='meny'>MENY</li>
+                            </Link>
+                            <Link to='aboutus-section' smooth={true} offset={-50} duration={500}>
+                                <li class='om-oss'>OM OSS</li>
+                            </Link>
+                            <Link to='info-section' smooth={true} offset={0} duration={500}>
+                                <li class='kontakt'>KONTAKT</li>
+                            </Link>
                         </ul>
                     </div> 
                     <div class='column is-4 navbar-button'>
-                        <button class='button navbar-orderButton'>
-                            <img src={basket.src} alt='basket'></img>
-                            <p class='button-label'>BESTÄLL TAKEAWAY</p>
-                        </button>
+                        <a href='https://www.foodora.se/en/restaurant/wuvx/hornet-vasteras'>
+                            <button class='button navbar-orderButton'>
+                                <img src={basket.src} alt='basket'></img>
+                                <p class='button-label'>BESTÄLL TAKEAWAY</p>
+                            </button>
+                        </a> 
                     </div> 
                 </div>
             </div>

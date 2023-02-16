@@ -1,14 +1,10 @@
-@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
 @import 'https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@100;400;700&display=swap';
 
-.menu-hero {
-    .menu-hero-body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+.menu-section {
+    .menu-container {
         .menu-rows {
-            width: 100%;
             .menu-label {
                 display: flex;
                 justify-content: space-evenly;
@@ -62,6 +58,7 @@
                     /* Color / Primary */
 
                     background: #ECD4AC;
+                    transition: 0.5s ease;
                     cursor: pointer;
                     .menu-option-label {
                         width: 56px;
@@ -86,6 +83,10 @@
                         flex-grow: 0;
                     }
                 }
+                .menu-navbar-option-active:hover {
+                    background-color: #d4b989;
+                    transition: 0.5s ease;
+                }
                 .menu-navbar-option-inactive {
                     display: flex;
                     flex-direction: row;
@@ -99,6 +100,7 @@
                     /* Color / Primary */
 
                     background: #FFFFFF;
+                    transition: 0.5s ease;
                     cursor: pointer;
                     .menu-option-label {
                         width: 39px;
@@ -118,14 +120,17 @@
 
                     }
                 }
+                .menu-navbar-option-inactive:hover {
+                    background-color: #e4e3e3;
+                    transition: 0.5s ease;
+                }
             }
             .category {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 .category-label {
-                    width: 118px;
-                    height: 29px;
+                    
                     margin: 20px;
 
                     font-family: 'Montserrat';
@@ -205,7 +210,7 @@
                             font-weight: 700;
                             font-size: 18px;
                             line-height: 22px;
-                            margin: 5px;
+                            margin: 20px 0px 0px 10px;
                             /* identical to box height */
 
                             display: flex;
@@ -321,7 +326,7 @@
                             font-weight: 700;
                             font-size: 18px;
                             line-height: 22px;
-                            margin: 5px;
+                            margin: 20px 0px 0px 10px;
                             /* identical to box height */
 
                             display: flex;
