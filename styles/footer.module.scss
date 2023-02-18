@@ -2,10 +2,10 @@
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
 
 .footer {
-    background: radial-gradient(100% 351.56% at 0% 48.14%, #FDF5E9 20.83%, #FFFFFF 48.44%, #FDF5E9 79.17%), url(/public/images/footer/footerImg.png) no-repeat bottom center;
-    background-blend-mode: screen;
-    background-size: cover;
     padding: 48px 48px 48px 48px;
+    background: radial-gradient(100% 351.56% at 0% 48.14%, #FDF5E9 20.83%, #FFFFFF 48.44%, #FDF5E9 79.17%), url(/.next/static/media/footerImg.fc3c8d50.png);
+    background-size: cover;
+    background-blend-mode: screen;
     .footer-container {
         .footer-socials {
                 display: flex;
