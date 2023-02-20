@@ -8,7 +8,8 @@ import img4 from 'public/images/galleryImages/img4.png'
 import img5 from 'public/images/galleryImages/img5.png'
 import img6 from 'public/images/galleryImages/img6.png'
 
-export default function Galery() {
+export default function Galery(props) {
+    console.log(2)
     return(
         <section className="gallery-section is-small">
             <div className='container is-fluid m-0 p-0 gallery-container'>

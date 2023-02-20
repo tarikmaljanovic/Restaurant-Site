@@ -1,4 +1,5 @@
 import { Inter } from '@next/font/google'
+import {getMenu, getProfile, getGallery} from 'utils/services.js'
 import NavBar from 'components/navBar.js'
 import TitleBanner from 'components/titleBanner.js'
 import DeliveryServices from 'components/deliveryServices.js'
@@ -12,18 +13,34 @@ import Footer from 'components/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home({gallery, profile, menu}) {
   return (
     <div className='view'>
         <NavBar />
-        <TitleBanner />
+        <TitleBanner profile={profile} />
         <DeliveryServices />
-        <Gallery />
-        <Menu />
+        <Gallery gallery={gallery} />
+        <Menu menu={menu} />
         <TakeawayBanner />
         <AboutUs />
-        <InformationSection />
+        <InformationSection profile={profile} />
         <Footer />
     </div>
   )
+}
+
+export async function getStaticProps(context) {
+  const gallery = await getGallery(context);
+  const events = await getEvents();
+  const profile = await getProfile(context);
+  const menu = await getMenu(context);
+  return {
+    props: {
+      gallery: gallery,
+      events: events,
+      profile: profile,
+      menu: menu,
+    },
+    revalidate: 10,
+  };
 }
