@@ -3,7 +3,8 @@
 
 .footer {
     padding: 48px 48px 48px 48px;
-    background: radial-gradient(100% 351.56% at 0% 48.14%, #FDF5E9 20.83%, #FFFFFF 48.44%, #FDF5E9 79.17%) url(/_next/static/media/takeawayBannerBackground.27f846ce.png);
+    background: radial-gradient(100% 351.56% at 0% 48.14%, #FDF5E9 20.83%, #FFFFFF 48.44%, #FDF5E9 79.17%), url("/images/footer/footerImg.png");
+    background-size: cover;
     background-blend-mode: screen;
     .footer-container {
         .footer-socials {
