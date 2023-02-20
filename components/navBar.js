@@ -23,7 +23,6 @@ export default function NavBar() {
     
 
     return (
-        <>
         <div className='header navbar-header'>
             <div className='container is-fluid navbar-container p-0'>
                 <div className='columns navbar-columns'>
@@ -57,6 +56,5 @@ export default function NavBar() {
                 </div>
             </div>
         </div>
-        </>
     )
 }

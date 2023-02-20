@@ -16,19 +16,19 @@ export default function Galery() {
                     <div className='column'>
                         <img src={img1.src} className='img-column'></img>
                     </div> 
-                    <div class='column'>
+                    <div className='column'>
                         <img src={img2.src} className='img-column'></img>
                     </div>
-                    <div class='column'>
+                    <div className='column'>
                         <img src={img3.src} className='img-column'></img>
                     </div>
-                    <div class='column'>
+                    <div className='column'>
                         <img src={img4.src} className='img-column'></img>
                     </div>
-                    <div class='column'>
+                    <div className='column'>
                         <img src={img5.src} className='img-column'></img>
                     </div>
-                    <div class='column'>
+                    <div className='column'>
                         <img src={img6.src} className='img-column'></img>
                     </div>
                 </div>

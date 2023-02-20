@@ -19,7 +19,7 @@ export default function AboutUs() {
                         </div>
                     </div>
                     <div className='column aboutus-right p-0'>
-                        <img src={aboutUsImg.src} alt='about us' class='aboutus-img'></img>
+                        <img src={aboutUsImg.src} alt='about us' className='aboutus-img'></img>
                     </div>
                 </div>
             </div>
