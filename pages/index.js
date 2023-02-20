@@ -1,5 +1,5 @@
 import { Inter } from '@next/font/google'
-import {getMenu, getProfile, getGallery, getEvents} from 'utils/services.js'
+import {getMenu, getProfile, getGallery} from 'utils/services.js'
 import NavBar from 'components/navBar.js'
 import TitleBanner from 'components/titleBanner.js'
 import DeliveryServices from 'components/deliveryServices.js'
@@ -17,7 +17,7 @@ export default function Home({gallery, profile, menu}) {
   return (
     <div className='view'>
         <NavBar />
-        <TitleBanner profile={profile} />
+        <TitleBanner profile={profile} gallery={gallery} />
         <DeliveryServices />
         <Gallery gallery={gallery} />
         <Menu menu={menu} />
@@ -31,13 +31,11 @@ export default function Home({gallery, profile, menu}) {
 
 export async function getStaticProps(context) {
   const gallery = await getGallery(context);
-  const events = await getEvents();
   const profile = await getProfile(context);
   const menu = await getMenu(context);
   return {
     props: {
       gallery: gallery,
-      events: events,
       profile: profile,
       menu: menu,
     },

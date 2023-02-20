@@ -3,7 +3,9 @@ import { Inter } from '@next/font/google'
 import styles from 'styles/workingHours.module.scss'
 import alert from 'public/icons/alert.png'
 
-export default function WorkingHours() {
+export default function WorkingHours(props) {
+    const profile = props.profile;
+    const days = ['Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag', 'Söndag']
     return(
         <div className="dropdown-content workhours-dropdown-content">
             <div className="dropdown-item ordinary-workhours">
@@ -12,34 +14,23 @@ export default function WorkingHours() {
             <hr className="dropdown-divider"/>
             <div className="dropdown-item workinghours">
                 <div className='rows day-rows'>
-                    <div className='row day-row'>
-                        <h4 className='day'>Måndag:</h4>
-                        <h4 className='time'>08:00 - 16:00</h4>
-                    </div>
-                    <div className='row day-row'>
-                        <h4 className='day'>Tisdag:</h4>
-                        <h4 className='time'>08:00 - 16:00</h4>
-                    </div>
-                    <div className='row day-row'>
-                        <h4 className='day'>Onsdag:</h4>
-                        <h4 className='time'>08:00 - 16:00</h4>  
-                    </div>
-                    <div className='row day-row'>
-                        <h4 className='day'>Torsdag:</h4>
-                        <h4 className='time'>08:00 - 16:00</h4>
-                    </div>
-                    <div className='row day-row'>
-                        <h4 className='day'>Fredag:</h4>
-                        <h4 className='time'>08:00 - 16:00</h4>
-                    </div>
-                    <div className='row day-row'>
-                        <h4 className='day'>Lördag:</h4>
-                        <h4 className='time'>08:00 - 16:00</h4>
-                    </div>
-                    <div className='row day-row'>
-                        <h4 className='day'>Söndag::</h4>
-                        <h4 className='time'>08:00 - 16:00</h4>
-                    </div>
+                    {profile.working_time.map((item, index) => {
+                        if(item.closed == 0) {
+                            return (
+                                <div className='row day-row'>
+                                    <h4 className='day'>{days[index]}</h4>
+                                    <h4 className='time'>{item.time}</h4>
+                                </div>
+                            )
+                        } else {
+                            return (
+                                <div className='row day-row'>
+                                    <h4 className='day'>{days[index]}</h4>
+                                    <h4 className='time'>Stängd</h4>
+                                </div>
+                            )
+                        }
+                    })}
                 </div>
             </div>
             <hr className="dropdown-divider"/>
@@ -49,7 +40,17 @@ export default function WorkingHours() {
             </div>
             <hr className='dropdown-divider'></hr>
             <div className='dropdown-item special-workhours'>
-                <h4 className='special-workhours-label'><span className='date'>20/01/2021</span><span className='time'> - 08:00 -16:00</span></h4>
+                {profile.custom_working_time_default.map((item, index) => {
+                    if(item.start == null && item.start == null) {
+                        return (
+                            <h4 className='special-workhours-label'><span className='date'>{item.date.split('-').join('/')}</span><span className='time'></span></h4>
+                        )
+                    } else {
+                        return (
+                            <h4 className='special-workhours-label'><span className='date'>{item.date.split('-').join('/')}</span><span className='time'> - {item.start.slice(0,5)} - {item.end.slice(0,5)}</span></h4>
+                        )
+                    }
+                })}
             </div>
         </div>
     )

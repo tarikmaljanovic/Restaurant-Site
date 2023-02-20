@@ -3,10 +3,10 @@
 
 .gallery-section {
     .gallery-columns {
+        overflow-x: scroll;
         .column {
             .img-column {
-                width: 100%;
-                height: 100%;
+                object-fit: cover;
             }
         }
     }

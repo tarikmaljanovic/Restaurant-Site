@@ -2,6 +2,7 @@ import { render } from 'react-dom'
 import { Inter } from '@next/font/google'
 import { Link } from 'react-scroll'
 import { useState } from 'react'
+import Image from 'next/image'
 import styles from 'styles/titleBanner.module.scss'
 import WorkingHours from 'components/workingHours.js'
 import titleBannerImg from 'public/images/titleBanner/titleBannerImg.png'
@@ -14,8 +15,15 @@ import arrow from 'public/icons/arrow.png'
 
 export default function TitleBanner(props) {
     const profile = props.profile;
+    const gallery = props.gallery;
     const [menuState, setMenuState] = useState(false);
     let visibilityCheck = menuState ? 'is-active' : '';
+
+    const today = (new Date()).getDay();
+    const workingHours = profile.working_time;
+    console.log(workingHours);
+    
+    
     return(
         <section className="hero is-large">
             <div className="hero-body titleBanner-hero p-0">
@@ -28,7 +36,7 @@ export default function TitleBanner(props) {
                                     <p className='bannerTitle'>Hörnet & <br/>Västerås</p>
                                 </div>
                                 <div className='column p-0 titleBanner-head-column'>
-                                    <img src={titleBannerImg.src} alt='bannerImg' className='bannerImg'></img>
+                                    <Image src={gallery[0].images[0].image} alt='bannerImg' className='bannerImg' width={1000} height={1000}></Image>
                                 </div>
                             </div>
                         </div>
@@ -42,14 +50,14 @@ export default function TitleBanner(props) {
                                     <div className={`dropdown ${visibilityCheck}`}>
                                     <div className="dropdown-trigger">
                                         <button className="button " aria-haspopup="true" aria-controls="dropdown-menu2" onClick={() => setMenuState(!menuState)}>
-                                        <span className='button-content'>IDAG: 08:00 - 16:00</span>
+                                        <span className='button-content'>IDAG: {(today == 6 || today == 7 ? 'Stängd' : workingHours[today-1].time)}</span>
                                         <span className="icon is-small">
                                             <img src={arrow.src} alt='arrow-icon' className={`arrow-${visibilityCheck}`}></img>
                                         </span>
                                         </button>
                                     </div>
                                     <div className="dropdown-menu" id="dropdown-menu2" role="menu">
-                                        <WorkingHours />
+                                        <WorkingHours profile={profile} />
                                     </div>
                                     </div>
                                 </div>
@@ -65,7 +73,7 @@ export default function TitleBanner(props) {
                                 <div className='notification phone p5'>
                                     <img src={phone.src} alt='phone'></img>
                                     <p className='phonenumber-label'>TELEFONNUMMER</p>
-                                    <a href={`tel:${'076 027 41 51'}`}><p className='phonenumber'>076 027 41 51</p></a>
+                                    <a href={`tel:${profile.phone}`}><p className='phonenumber'>{profile.phone}</p></a>
                                 </div>
                             </div>
                             <div className='column'>
