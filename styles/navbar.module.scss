@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
 
 .navbar-header {
@@ -49,7 +49,7 @@
                         font-family: 'Montserrat';
                         font-style: normal;
                         font-weight: 700;
-                        font-size: 14px;
+                        font-size: 13px;
                         line-height: 17px;
                         /* identical to box height */
 
@@ -75,7 +75,7 @@
                         font-family: 'Montserrat';
                         font-style: normal;
                         font-weight: 400;
-                        font-size: 14px;
+                        font-size: 13px;
                         line-height: 17px;
                         /* identical to box height */
         
@@ -101,7 +101,7 @@
                         font-family: 'Montserrat';
                         font-style: normal;
                         font-weight: 400;
-                        font-size: 14px;
+                        font-size: 13px;
                         line-height: 17px;
                         /* identical to box height */
         
@@ -127,7 +127,7 @@
                         font-family: 'Montserrat';
                         font-style: normal;
                         font-weight: 400;
-                        font-size: 14px;
+                        font-size: 13px;
                         line-height: 17px;
                         /* identical to box height */
         
@@ -147,10 +147,12 @@
                     .-active {
                         font-weight: 700;
                         color: #000000;
+                        transition: 0.2s ease;
                     }
                     .-inactive {
                         font-weight: 400;
                         color: #918E89;
+                        transition: 0.2s ease;
                     }
                 }
             }
@@ -178,6 +180,7 @@
                     width: 259px;
                     height: 48px;
                     border-radius: 0%;
+                    transition: 0.5s ease;
                     .button-label {
                         font-family: 'Montserrat';
                         font-style: normal;
@@ -192,6 +195,10 @@
                         color: #000000;
                     }
                 }
+            }
+            .navbar-orderButton:hover {
+                background-color: #d4b989;
+                transition: 0.5s ease;
             }
         }
     }

@@ -1,5 +1,6 @@
 import { render } from 'react-dom'
 import { Inter } from '@next/font/google'
+import { Link } from 'react-scroll'
 import { useState } from 'react'
 import styles from 'styles/titleBanner.module.scss'
 import WorkingHours from 'components/workingHours.js'
@@ -58,24 +59,26 @@ export default function TitleBanner() {
                                 <div class='notification location p-5'>
                                     <img src={location.src} alt='location'></img>
                                     <p class='address-label'>ADRESS</p>
-                                    <p className='address'>Krankroksgatan 7, 721 38</p>
+                                    <a href='https://goo.gl/maps/Z43GxJEqsvNWvLTVA'><p className='address'>Krankroksgatan 7, 721 38</p></a>
                                 </div>
                             </div>
                             <div class='column'>
                                 <div class='notification phone p5'>
                                     <img src={phone.src} alt='phone'></img>
                                     <p class='phonenumber-label'>TELEFONNUMMER</p>
-                                    <p class='phonenumber'>076 027 41 51</p>
+                                    <a href={`tel:${'076 027 41 51'}`}><p class='phonenumber'>076 027 41 51</p></a>
                                 </div>
                             </div>
                             <div class='column'>
                                 <div class='notification takeaway p-5'>
                                     <p class='takeaway-label'>TAKEAWAY?</p>
                                     <p class='order-takeaway'>Beställ takeaway från oss!</p>
-                                    <button class='button takeaway-button'>
-                                        <img src={basket.src} alt='basket'></img>
-                                        <p class='order-button-label'>BESTÄLL TAKEAWAY</p>
-                                    </button>
+                                    <a href='https://www.foodora.se/en/restaurant/wuvx/hornet-vasteras'>
+                                        <button class='button takeaway-button'>
+                                            <img src={basket.src} alt='basket'></img>
+                                            <p class='order-button-label'>BESTÄLL TAKEAWAY</p>
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>

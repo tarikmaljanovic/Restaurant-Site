@@ -1,5 +1,4 @@
-@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap';
-@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
 
 .hero {
@@ -134,7 +133,6 @@
                                     }
                                 }
                             }
-                            
                         }
                         p {
                             /* Öppettider */
@@ -172,7 +170,10 @@
                         justify-content: space-between;
                         align-items: center;
                         flex-direction: column;
-
+                        text-decoration: none;
+                        a {
+                            text-decoration: none;
+                        }
                         .address-label {
                             /* ADRESS */
 
@@ -243,6 +244,9 @@
                         justify-content: space-between;
                         align-items: center;
                         flex-direction: column;
+                        a {
+                            text-decoration: none;
+                        }
                         .phonenumber-label {
                             /* TELEFONNUMMER */
 
@@ -313,10 +317,11 @@
                         justify-content: space-between;
                         align-items: center;
                         flex-direction: column;
+                        a {
+                            text-decoration: none;
+                        }
                         .takeaway-label {
                             /* TAKEAWAY? */
-
-
 
                             width: 104px;
                             height: 20px;
@@ -378,6 +383,7 @@
 
                             box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.04);
                             border-radius: 0%;
+                            transition: 0.5s ease;
                             .order-button-label {
                                 /* UTOPIA YOGA STUDIO */
 
@@ -403,6 +409,10 @@
                                 order: 1;
                                 flex-grow: 0;
                             }
+                        }
+                        .takeaway-button:hover {
+                            background-color: #e4e3e3;
+                            transition: 0.5s ease;
                         }
                     }
                 }
