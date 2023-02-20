@@ -7,32 +7,32 @@ import waytogo from 'public/images/delivery ServicesImages/waytogo.png'
 
 export default function DeliveryServices() {
     return (
-        <section class="section deliveryServices-section is-small p-0">
-                <div class='container deliveryServices-container'>
-                    <div class='columns deliveryServices-columns'>
-                        <div class='column left-title'>
+        <section className="section deliveryServices-section is-small p-0">
+                <div className='container deliveryServices-container'>
+                    <div className='columns deliveryServices-columns'>
+                        <div className='column left-title'>
                             <h3>Beställ hemkörning</h3>
                             <p>Du kan beställa vår mat för hemkörning genom följande tjänster.</p>
                         </div>
-                        <div class='column'>
-                            <div class='columns right-links'>
-                                <div class='column'>
+                        <div className='column'>
+                            <div className='columns right-links'>
+                                <div className='column'>
                                     <a href='https://wolt.com/sv/swe/vasteras/restaurant/hrnet'>
-                                        <div class='notification wolt'>
+                                        <div className='notification wolt'>
                                             <img src={wolt.src} alt='wolt'></img>
                                         </div>
                                     </a>
                                 </div>
-                                <div class='column'>
+                                <div className='column'>
                                     <a href='https://www.foodora.se/restaurant/wuvx/hornet-vasteras'>
-                                        <div class='notification foodora'>
+                                        <div className='notification foodora'>
                                             <img src={foodora.src} alt='foodora'></img>
                                         </div>
                                     </a>
                                 </div>
-                                <div class='column'>
+                                <div className='column'>
                                     <a href='https://waytogo.se/restauranger/mat/hornet-vasteras'>
-                                        <div class='notification waytogo'>
+                                        <div className='notification waytogo'>
                                             <img src={waytogo.src} alt='waytogo'></img>
                                         </div>
                                     </a>

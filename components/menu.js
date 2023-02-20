@@ -10,138 +10,137 @@ import img6 from 'public/images/menu/img6.png'
 
 export default function Menu() {
     return(
-        <>
-        <section class="section is-fullheight menu-section">
-            <div class="container menu-container">
-                <div class='rows menu-rows'>
-                    <div class='row menu-label'>
-                        <p class='menu-label-back'>Meny</p>
-                        <p class='menu-label-front'>Meny</p>
+        <section className="section is-fullheight menu-section">
+            <div className="container menu-container">
+                <div className='rows menu-rows'>
+                    <div className='row menu-label'>
+                        <p className='menu-label-back'>Meny</p>
+                        <p className='menu-label-front'>Meny</p>
                     </div>
-                    <div class='row menu-navbar'>
-                        <div class='menu-navbar-option-active'>
-                            <p class='menu-option-label'>Salader</p>
+                    <div className='row menu-navbar'>
+                        <div className='menu-navbar-option-active'>
+                            <p className='menu-option-label'>Salader</p>
                         </div>
-                        <div class='menu-navbar-option-inactive'>
-                            <p class='menu-option-label'>Pasta</p>
+                        <div className='menu-navbar-option-inactive'>
+                            <p className='menu-option-label'>Pasta</p>
                         </div>
-                        <div class='menu-navbar-option-inactive'>
-                            <p class='menu-option-label'>Wraps</p>
+                        <div className='menu-navbar-option-inactive'>
+                            <p className='menu-option-label'>Wraps</p>
                         </div>
-                        <div class='menu-navbar-option-inactive'>
-                            <div class='menu-option-label'>Toast</div>
+                        <div className='menu-navbar-option-inactive'>
+                            <div className='menu-option-label'>Toast</div>
                         </div>
-                        <div class='menu-navbar-option-inactive'>
-                            <div class='menu-option-label'>Juicer</div>
+                        <div className='menu-navbar-option-inactive'>
+                            <div className='menu-option-label'>Juicer</div>
                         </div>
-                        <div class='menu-navbar-option-inactive'>
-                            <div class='menu-option-label'>Dryck</div>
+                        <div className='menu-navbar-option-inactive'>
+                            <div className='menu-option-label'>Dryck</div>
                         </div>
                     </div>
-                    <div class='row divider'>
-                        <hr class='dopdown divider'/>
+                    <div className='row divider'>
+                        <hr className='dopdown divider'/>
                     </div>
-                    <div class='row category'>
-                        <p class='category-label'>Category</p>
+                    <div className='row category'>
+                        <p className='category-label'>Category</p>
                     </div>
-                    <div class='row menu-body'>
-                        <div class='columns menu-row'>
-                            <div class='column item-wimg'>
-                                <img src={img1.src} class='menu-item-img'></img>
-                                <div class='menu-item-description'>
-                                    <p class='item-title'>In fusce eget.</p>
-                                    <p class='item-description'>Facilisis purus eu velit vitae tristique pulvinar in aliquam. </p>
-                                    <p class='item-price'>160 SEK</p>
-                                    <div class='item-tags'>
-                                        <p class='item-tag'>Laktosfritt</p>
-                                        <p class='item-tag'>Vetefritt</p>
+                    <div className='row menu-body'>
+                        <div className='columns menu-row'>
+                            <div className='column item-wimg'>
+                                <img src={img1.src} className='menu-item-img'></img>
+                                <div className='menu-item-description'>
+                                    <p className='item-title'>In fusce eget.</p>
+                                    <p className='item-description'>Facilisis purus eu velit vitae tristique pulvinar in aliquam. </p>
+                                    <p className='item-price'>160 SEK</p>
+                                    <div className='item-tags'>
+                                        <p className='item-tag'>Laktosfritt</p>
+                                        <p className='item-tag'>Vetefritt</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class='column item-noimg'>
-                                <div class='menu-item-description'>
-                                    <p class='item-title'>Mi velit.</p>
-                                    <p class='item-description'>Dictum sed scelerisque vitae scelerisque enim, dictumst. Ornare tempor duis tortor id convallis proin. Viverra risus quis convallis volutpat diam sed sit.</p>
-                                    <p class='item-price'>160 SEK</p>
-                                    <div class='item-tags'>
-                                        <p class='item-tag'>Laktosfritt</p>
-                                        <p class='item-tag'>Vetefritt</p>
+                            <div className='column item-noimg'>
+                                <div className='menu-item-description'>
+                                    <p className='item-title'>Mi velit.</p>
+                                    <p className='item-description'>Dictum sed scelerisque vitae scelerisque enim, dictumst. Ornare tempor duis tortor id convallis proin. Viverra risus quis convallis volutpat diam sed sit.</p>
+                                    <p className='item-price'>160 SEK</p>
+                                    <div className='item-tags'>
+                                        <p className='item-tag'>Laktosfritt</p>
+                                        <p className='item-tag'>Vetefritt</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class='column item-wimg'>
-                                <img src={img5.src} class='menu-item-img'></img>
-                                <div class='menu-item-description'>
-                                    <p class='item-title'>In fusce eget.</p>
-                                    <p class='item-description'>Facilisis purus eu velit vitae tristique pulvinar in aliquam. </p>
-                                    <p class='item-price'>160 SEK</p>
-                                    <div class='item-tags'>
-                                        <p class='item-tag'>Laktosfritt</p>
-                                        <p class='item-tag'>Vetefritt</p>
+                            <div className='column item-wimg'>
+                                <img src={img5.src} className='menu-item-img'></img>
+                                <div className='menu-item-description'>
+                                    <p className='item-title'>In fusce eget.</p>
+                                    <p className='item-description'>Facilisis purus eu velit vitae tristique pulvinar in aliquam. </p>
+                                    <p className='item-price'>160 SEK</p>
+                                    <div className='item-tags'>
+                                        <p className='item-tag'>Laktosfritt</p>
+                                        <p className='item-tag'>Vetefritt</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class='columns menu-row'>
-                            <div class='column item-wimg'>
-                                <img src={img2.src} class='menu-item-img'></img>
-                                <div class='menu-item-description'>
-                                    <p class='item-title'>In fusce eget.</p>
-                                    <p class='item-description'>Facilisis purus eu velit vitae tristique pulvinar in aliquam. </p>
+                        <div className='columns menu-row'>
+                            <div className='column item-wimg'>
+                                <img src={img2.src} className='menu-item-img'></img>
+                                <div className='menu-item-description'>
+                                    <p className='item-title'>In fusce eget.</p>
+                                    <p className='item-description'>Facilisis purus eu velit vitae tristique pulvinar in aliquam. </p>
                                 </div>
                             </div>
-                            <div class='column item-wimg'>
+                            <div className='column item-wimg'>
+                                <img src={img4.src} className='menu-item-img'></img>
+                                <div className='menu-item-description'>
+                                    <p className='item-title'>In fusce eget.</p>
+                                    <p className='item-description'>Facilisis purus eu velit vitae tristique pulvinar in aliquam. </p>
+                                    <p className='item-price'>160 SEK</p>
+                                    <div className='item-tags'>
+                                        <p className='item-tag'>Laktosfritt</p>
+                                        <p className='item-tag'>Vetefritt</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='column item-wimg'>
                                 <img src={img4.src} class='menu-item-img'></img>
-                                <div class='menu-item-description'>
-                                    <p class='item-title'>In fusce eget.</p>
-                                    <p class='item-description'>Facilisis purus eu velit vitae tristique pulvinar in aliquam. </p>
-                                    <p class='item-price'>160 SEK</p>
-                                    <div class='item-tags'>
-                                        <p class='item-tag'>Laktosfritt</p>
-                                        <p class='item-tag'>Vetefritt</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class='column item-wimg'>
-                                <img src={img4.src} class='menu-item-img'></img>
-                                <div class='menu-item-description'>
-                                    <p class='item-title'>In fusce eget.</p>
-                                    <p class='item-description'>Facilisis purus eu velit vitae tristique pulvinar in aliquam. </p>
-                                    <p class='item-price'>160 SEK</p>
-                                    <div class='item-tags'>
-                                        <p class='item-tag'>Laktosfritt</p>
-                                        <p class='item-tag'>Vetefritt</p>
+                                <div className='menu-item-description'>
+                                    <p className='item-title'>In fusce eget.</p>
+                                    <p className='item-description'>Facilisis purus eu velit vitae tristique pulvinar in aliquam. </p>
+                                    <p className='item-price'>160 SEK</p>
+                                    <div className='item-tags'>
+                                        <p className='item-tag'>Laktosfritt</p>
+                                        <p className='item-tag'>Vetefritt</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class='columns menu-row'>
-                            <div class='column item-wimg'>
-                                <img src={img3.src} class='menu-item-img'></img>
-                                <div class='menu-item-description'>
-                                    <p class='item-title'>In fusce eget.</p>
-                                    <p class='item-description'>Facilisis purus eu velit vitae tristique pulvinar in aliquam. </p>
+                        <div className='columns menu-row'>
+                            <div className='column item-wimg'>
+                                <img src={img3.src} className='menu-item-img'></img>
+                                <div className='menu-item-description'>
+                                    <p className='item-title'>In fusce eget.</p>
+                                    <p className='item-description'>Facilisis purus eu velit vitae tristique pulvinar in aliquam. </p>
                                 </div>
                             </div>
-                            <div class='column item-noimg'>
-                                <div class='menu-item-description'>
-                                    <p class='item-title'>Mi velit.</p>
-                                    <p class='item-description'>Dictum sed scelerisque vitae scelerisque enim, dictumst. Ornare tempor duis tortor id convallis proin. Viverra risus quis convallis volutpat diam sed sit.</p>
-                                    <p class='item-price'>160 SEK</p>
-                                    <div class='item-tags'>
-                                        <p class='item-tag'>Laktosfritt</p>
-                                        <p class='item-tag'>Vetefritt</p>
+                            <div className='column item-noimg'>
+                                <div className='menu-item-description'>
+                                    <p className='item-title'>Mi velit.</p>
+                                    <p className='item-description'>Dictum sed scelerisque vitae scelerisque enim, dictumst. Ornare tempor duis tortor id convallis proin. Viverra risus quis convallis volutpat diam sed sit.</p>
+                                    <p className='item-price'>160 SEK</p>
+                                    <div className='item-tags'>
+                                        <p className='item-tag'>Laktosfritt</p>
+                                        <p className='item-tag'>Vetefritt</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class='column item-noimg'>
-                                <div class='menu-item-description'>
-                                    <p class='item-title'>Mi velit.</p>
-                                    <p class='item-description'>Dictum sed scelerisque vitae scelerisque enim, dictumst. Ornare tempor duis tortor id convallis proin. Viverra risus quis convallis volutpat diam sed sit.</p>
-                                    <p class='item-price'>160 SEK</p>
-                                    <div class='item-tags'>
-                                        <p class='item-tag'>Laktosfritt</p>
-                                        <p class='item-tag'>Vetefritt</p>
+                            <div className='column item-noimg'>
+                                <div className='menu-item-description'>
+                                    <p className='item-title'>Mi velit.</p>
+                                    <p className='item-description'>Dictum sed scelerisque vitae scelerisque enim, dictumst. Ornare tempor duis tortor id convallis proin. Viverra risus quis convallis volutpat diam sed sit.</p>
+                                    <p className='item-price'>160 SEK</p>
+                                    <div className='item-tags'>
+                                        <p className='item-tag'>Laktosfritt</p>
+                                        <p className='item-tag'>Vetefritt</p>
                                     </div>
                                 </div>
                             </div>
@@ -150,6 +149,5 @@ export default function Menu() {
                 </div>
             </div>
         </section>
-        </>
     )
 }

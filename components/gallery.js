@@ -10,31 +10,29 @@ import img6 from 'public/images/galleryImages/img6.png'
 
 export default function Galery() {
     return(
-        <>
-            <section class="gallery-section is-small">
-                <div class='container is-fluid m-0 p-0 gallery-container'>
-                    <div class='columns is-gapless gallery-columns'>
-                        <div class='column'>
-                            <img src={img1.src} class='img-column'></img>
-                        </div> 
-                        <div class='column'>
-                            <img src={img2.src} class='img-column'></img>
-                        </div>
-                        <div class='column'>
-                            <img src={img3.src} class='img-column'></img>
-                        </div>
-                        <div class='column'>
-                            <img src={img4.src} class='img-column'></img>
-                        </div>
-                        <div class='column'>
-                            <img src={img5.src} class='img-column'></img>
-                        </div>
-                        <div class='column'>
-                            <img src={img6.src} class='img-column'></img>
-                        </div>
+        <section className="gallery-section is-small">
+            <div className='container is-fluid m-0 p-0 gallery-container'>
+                <div className='columns is-gapless gallery-columns'>
+                    <div className='column'>
+                        <img src={img1.src} className='img-column'></img>
+                    </div> 
+                    <div class='column'>
+                        <img src={img2.src} className='img-column'></img>
+                    </div>
+                    <div class='column'>
+                        <img src={img3.src} className='img-column'></img>
+                    </div>
+                    <div class='column'>
+                        <img src={img4.src} className='img-column'></img>
+                    </div>
+                    <div class='column'>
+                        <img src={img5.src} className='img-column'></img>
+                    </div>
+                    <div class='column'>
+                        <img src={img6.src} className='img-column'></img>
                     </div>
                 </div>
-            </section>
-        </>
+            </div>
+        </section>
     )
 }

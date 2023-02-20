@@ -17,66 +17,65 @@ export default function TitleBanner() {
     let visibilityCheck = menuState ? 'is-active' : '';
 
     return(
-        <>
-        <section class="hero is-large">
-            <div class="hero-body titleBanner-hero p-0">
-                <div class='rows titleBanner-rows'>
-                    <div class='row titleBanner-head'>
-                    <img src={backgroundImg.src} class='titleBanner-background'></img>
-                        <div class='container px-0 is-fluid titleBanner-head-container'>
-                            <div class='columns titleBanner-head-columns'>
-                                <div class='column p-0 titleBanner-head-column'>
-                                    <p class='bannerTitle'>Hörnet & <br/>Västerås</p>
+        <section className="hero is-large">
+            <div className="hero-body titleBanner-hero p-0">
+                <div className='rows titleBanner-rows'>
+                    <div className='row titleBanner-head'>
+                    <img src={backgroundImg.src} className='titleBanner-background'></img>
+                        <div className='container px-0 is-fluid titleBanner-head-container'>
+                            <div className='columns titleBanner-head-columns'>
+                                <div className='column p-0 titleBanner-head-column'>
+                                    <p className='bannerTitle'>Hörnet & <br/>Västerås</p>
                                 </div>
-                                <div class='column p-0 titleBanner-head-column'>
-                                    <img src={titleBannerImg.src} alt='bannerImg' class='bannerImg'></img>
+                                <div className='column p-0 titleBanner-head-column'>
+                                    <img src={titleBannerImg.src} alt='bannerImg' className='bannerImg'></img>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class='row infocards-row'>
-                        <div class='columns infocards-columns'>
-                            <div class='column infocard-hours'>
-                                <div class='notification hours p-5'>
-                                    <img src={clock.src} alt='clock' class='clock-icon'></img>
+                    <div className='row infocards-row'>
+                        <div className='columns infocards-columns'>
+                            <div className='column infocard-hours'>
+                                <div className='notification hours p-5'>
+                                    <img src={clock.src} alt='clock' className='clock-icon'></img>
                                     <p>Öppettider</p>
                                     <div className={`dropdown ${visibilityCheck}`}>
-                                    <div class="dropdown-trigger">
-                                        <button class="button " aria-haspopup="true" aria-controls="dropdown-menu2" onClick={() => setMenuState(!menuState)}>
-                                        <span class='button-content'>IDAG: 08:00 - 16:00</span>
-                                        <span class="icon is-small">
+                                    <div className="dropdown-trigger">
+                                        <button className="button " aria-haspopup="true" aria-controls="dropdown-menu2" onClick={() => setMenuState(!menuState)}>
+                                        <span className='button-content'>IDAG: 08:00 - 16:00</span>
+                                        <span className="icon is-small">
                                             <img src={arrow.src} alt='arrow-icon' className={`arrow-${visibilityCheck}`}></img>
                                         </span>
                                         </button>
                                     </div>
-                                    <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+                                    <div className="dropdown-menu" id="dropdown-menu2" role="menu">
                                         <WorkingHours />
                                     </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class='column'>
-                                <div class='notification location p-5'>
+                            <div className='column'>
+                                <div className='notification location p-5'>
                                     <img src={location.src} alt='location'></img>
-                                    <p class='address-label'>ADRESS</p>
+                                    <p className='address-label'>ADRESS</p>
                                     <a href='https://goo.gl/maps/Z43GxJEqsvNWvLTVA'><p className='address'>Krankroksgatan 7, 721 38</p></a>
                                 </div>
                             </div>
-                            <div class='column'>
-                                <div class='notification phone p5'>
+                            <div className='column'>
+                                <div className='notification phone p5'>
                                     <img src={phone.src} alt='phone'></img>
-                                    <p class='phonenumber-label'>TELEFONNUMMER</p>
-                                    <a href={`tel:${'076 027 41 51'}`}><p class='phonenumber'>076 027 41 51</p></a>
+                                    <p className='phonenumber-label'>TELEFONNUMMER</p>
+                                    <a href={`tel:${'076 027 41 51'}`}><p className='phonenumber'>076 027 41 51</p></a>
                                 </div>
                             </div>
-                            <div class='column'>
-                                <div class='notification takeaway p-5'>
-                                    <p class='takeaway-label'>TAKEAWAY?</p>
-                                    <p class='order-takeaway'>Beställ takeaway från oss!</p>
+                            <div className='column'>
+                                <div className='notification takeaway p-5'>
+                                    <p className='takeaway-label'>TAKEAWAY?</p>
+                                    <p className='order-takeaway'>Beställ takeaway från oss!</p>
                                     <a href='https://www.foodora.se/en/restaurant/wuvx/hornet-vasteras'>
-                                        <button class='button takeaway-button'>
+                                        <button className='button takeaway-button'>
                                             <img src={basket.src} alt='basket'></img>
-                                            <p class='order-button-label'>BESTÄLL TAKEAWAY</p>
+                                            <p className='order-button-label'>BESTÄLL TAKEAWAY</p>
                                         </button>
                                     </a>
                                 </div>
@@ -86,7 +85,6 @@ export default function TitleBanner() {
                 </div>
             </div>
         </section>
-        </>
     )
 }
         

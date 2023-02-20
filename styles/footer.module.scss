@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+@import 'https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap';
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
 
 .footer {
     padding: 48px 48px 48px 48px;
-    background: radial-gradient(100% 351.56% at 0% 48.14%, #FDF5E9 20.83%, #FFFFFF 48.44%, #FDF5E9 79.17%), url(/.next/static/media/footerImg.fc3c8d50.png);
-    background-size: cover;
+    background: radial-gradient(100% 351.56% at 0% 48.14%, #FDF5E9 20.83%, #FFFFFF 48.44%, #FDF5E9 79.17%) url(/_next/static/media/takeawayBannerBackground.27f846ce.png);
     background-blend-mode: screen;
     .footer-container {
         .footer-socials {
