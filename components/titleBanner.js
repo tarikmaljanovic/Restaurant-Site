@@ -58,7 +58,7 @@ export default function TitleBanner() {
                                 <div className='notification location p-5'>
                                     <img src={location.src} alt='location'></img>
                                     <p className='address-label'>ADRESS</p>
-                                    <a href='https://goo.gl/maps/Z43GxJEqsvNWvLTVA'><p className='address'>Krankroksgatan 7, 721 38</p></a>
+                                    <a href='https://goo.gl/maps/Z43GxJEqsvNWvLTVA' target={'_blank'}><p className='address'>Krankroksgatan 7, 721 38</p></a>
                                 </div>
                             </div>
                             <div className='column'>
@@ -72,7 +72,7 @@ export default function TitleBanner() {
                                 <div className='notification takeaway p-5'>
                                     <p className='takeaway-label'>TAKEAWAY?</p>
                                     <p className='order-takeaway'>Beställ takeaway från oss!</p>
-                                    <a href='https://www.foodora.se/en/restaurant/wuvx/hornet-vasteras'>
+                                    <a href='https://www.foodora.se/en/restaurant/wuvx/hornet-vasteras' target={'_blank'}>
                                         <button className='button takeaway-button'>
                                             <img src={basket.src} alt='basket'></img>
                                             <p className='order-button-label'>BESTÄLL TAKEAWAY</p>

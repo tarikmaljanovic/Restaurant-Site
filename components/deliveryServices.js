@@ -17,21 +17,21 @@ export default function DeliveryServices() {
                     <div className='column'>
                         <div className='columns right-links'>
                             <div className='column'>
-                                <a href='https://wolt.com/sv/swe/vasteras/restaurant/hrnet'>
+                                <a href='https://wolt.com/sv/swe/vasteras/restaurant/hrnet' target={'_blank'}>
                                     <div className='notification wolt'>
                                         <img src={wolt.src} alt='wolt'></img>
                                     </div>
                                 </a>
                             </div>
                             <div className='column'>
-                                <a href='https://www.foodora.se/restaurant/wuvx/hornet-vasteras'>
+                                <a href='https://www.foodora.se/restaurant/wuvx/hornet-vasteras' target={'_blank'}>
                                     <div className='notification foodora'>
                                         <img src={foodora.src} alt='foodora'></img>
                                     </div>
                                 </a>
                             </div>
                             <div className='column'>
-                                <a href='https://waytogo.se/restauranger/mat/hornet-vasteras'>
+                                <a href='https://waytogo.se/restauranger/mat/hornet-vasteras' target={'_blank'}>
                                     <div className='notification waytogo'>
                                         <img src={waytogo.src} alt='waytogo'></img>
                                     </div>

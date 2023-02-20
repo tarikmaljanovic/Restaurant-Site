@@ -46,7 +46,7 @@ export default function NavBar() {
                         </ul>
                     </div> 
                     <div className='column is-4 navbar-button'>
-                        <a href='https://www.foodora.se/en/restaurant/wuvx/hornet-vasteras'>
+                        <a href='https://www.foodora.se/en/restaurant/wuvx/hornet-vasteras' target={'_blank'}>
                             <button className='button navbar-orderButton'>
                                 <img src={basket.src} alt='basket'></img>
                                 <p className='button-label'>BESTÄLL TAKEAWAY</p>
