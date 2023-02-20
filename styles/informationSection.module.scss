@@ -68,7 +68,7 @@
                         flex-direction: row;
                         flex-wrap: wrap;
                         .day {
-                            margin: 20px 20px 20px 0px;
+                            margin: 0px 20px 20px 0px;
                             .day-label {
                                 font-family: 'Montserrat';
                                 font-style: normal;
@@ -158,9 +158,12 @@
                 }
             }
             .info-right {
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 .info-map {
-                    width: 100%;
-                    height: 100%;
+                   height: 80%;
+                   height: 80%;
                 }
             }
         }

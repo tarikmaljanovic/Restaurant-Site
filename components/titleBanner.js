@@ -66,7 +66,7 @@ export default function TitleBanner(props) {
                                 <div className='notification location p-5'>
                                     <img src={location.src} alt='location'></img>
                                     <p className='address-label'>ADRESS</p>
-                                    <a href='https://www.google.com/maps/place/Smedjegatan+4,+722+13+V%C3%A4ster%C3%A5s,+Sweden/@59.6117815,16.5463769,17z/data=!4m6!3m5!1s0x465e613929ab4357:0x4531e40ab5b69ad7!8m2!3d59.6117815!4d16.5463769!16s%2Fg%2F11c5fy4m5f' target={'_blank'}><p className='address'>{profile.address}</p></a>
+                                    <a href={`https://www.google.com/maps/place/${profile.address}14z`} target={'_blank'}><p className='address'>{profile.address}</p></a>
                                 </div>
                             </div>
                             <div className='column'>

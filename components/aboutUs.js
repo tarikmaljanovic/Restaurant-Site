@@ -1,9 +1,12 @@
 import { render } from 'react-dom'
 import { Inter } from '@next/font/google'
+import Image from 'next/image'
 import styles from 'styles/aboutUs.module.scss'
 import aboutUsImg from 'public/images/aboutUs/aboutUsImg.png'
 
-export default function AboutUs() {
+export default function AboutUs(props) {
+    const gallery = props.gallery;
+
     return(
         <section className="section is-large aboutus-section p-0">
             <div className='container aboutus-container is-fluid m-0 p-0'>
@@ -19,7 +22,7 @@ export default function AboutUs() {
                         </div>
                     </div>
                     <div className='column aboutus-right p-0'>
-                        <img src={aboutUsImg.src} alt='about us' className='aboutus-img'></img>
+                        <Image src={gallery[2].images[0].fullhd} width={1000} height={1000} className='aboutus-img'></Image>
                     </div>
                 </div>
             </div>

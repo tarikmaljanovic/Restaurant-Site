@@ -22,7 +22,7 @@ export default function Home({gallery, profile, menu}) {
         <Gallery gallery={gallery} />
         <Menu menu={menu} />
         <TakeawayBanner />
-        <AboutUs />
+        <AboutUs gallery={gallery} />
         <InformationSection profile={profile} />
         <Footer profile={profile} />
     </div>
