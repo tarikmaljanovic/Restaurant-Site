@@ -8,8 +8,9 @@
             align-items: center;
             flex-direction: column;
             padding: 48px;
-            background: linear-gradient(0deg, #ecd4ac, #ecd4ac), url(/_next/static/media/takeawayBannerBackground.27f846ce.png) no-repeat top center;
+            //background: linear-gradient(0deg, #ecd4ac, #ecd4ac), url(/_next/static/media/takeawayBannerBackground.27f846ce.png) no-repeat top center;
             background-blend-mode: color;
+            background: linear-gradient(0deg, #ecd4ac, #ecd4ac), url("/images/takeawayBanner/takeawayBannerBackground.png") no-repeat top center;
             background-size: cover;
             .takeaway-label {
                 /* TAKEAWAY? */
