@@ -5,7 +5,7 @@ import alert from 'public/icons/alert.png'
 
 export default function WorkingHours(props) {
     const profile = props.profile;
-    const days = ['Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag', 'Söndag']
+    const days = ['Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag', 'Söndag'];
     return(
         <div className="dropdown-content workhours-dropdown-content">
             <div className="dropdown-item ordinary-workhours">

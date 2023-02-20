@@ -24,7 +24,7 @@ export default function Home({gallery, profile, menu}) {
         <TakeawayBanner />
         <AboutUs />
         <InformationSection profile={profile} />
-        <Footer />
+        <Footer profile={profile} />
     </div>
   )
 }
