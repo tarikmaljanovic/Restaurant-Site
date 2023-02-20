@@ -1,5 +1,5 @@
 import { Inter } from '@next/font/google'
-import {getMenu, getProfile, getGallery} from 'utils/services.js'
+import {getMenu, getProfile, getGallery, getEvents} from 'utils/services.js'
 import NavBar from 'components/navBar.js'
 import TitleBanner from 'components/titleBanner.js'
 import DeliveryServices from 'components/deliveryServices.js'
@@ -12,8 +12,8 @@ import Footer from 'components/footer'
 
 
 const inter = Inter({ subsets: ['latin'] })
-
 export default function Home({gallery, profile, menu}) {
+
   return (
     <div className='view'>
         <NavBar />

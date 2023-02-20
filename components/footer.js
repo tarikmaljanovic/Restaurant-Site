@@ -22,7 +22,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className='column footer-logo'>
-                        <img src={logo.src} alt='logo' class='footer-logo-img'></img>
+                        <img src={logo.src} alt='logo' className='footer-logo-img'></img>
                     </div>
                     <div className='column footer-toTop'>
                         <div className='footer-toTop-inner'>

@@ -102,7 +102,7 @@ export default function Menu() {
                                 </div>
                             </div>
                             <div className='column item-wimg'>
-                                <img src={img4.src} class='menu-item-img'></img>
+                                <img src={img4.src} className='menu-item-img'></img>
                                 <div className='menu-item-description'>
                                     <p className='item-title'>In fusce eget.</p>
                                     <p className='item-description'>Facilisis purus eu velit vitae tristique pulvinar in aliquam. </p>

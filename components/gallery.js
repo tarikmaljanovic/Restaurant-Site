@@ -7,14 +7,22 @@ import img3 from 'public/images/galleryImages/img3.png'
 import img4 from 'public/images/galleryImages/img4.png'
 import img5 from 'public/images/galleryImages/img5.png'
 import img6 from 'public/images/galleryImages/img6.png'
-
+import Image from 'next/image';
 export default function Galery(props) {
-    console.log(2)
+    const gallery = props.gallery;
+    console.log(gallery[1]);
     return(
         <section className="gallery-section is-small">
             <div className='container is-fluid m-0 p-0 gallery-container'>
                 <div className='columns is-gapless gallery-columns'>
-                    <div className='column'>
+                {gallery[1].images.map((item, index) => {
+                    return (
+                        <div className=" column is-2 img" key={index}>
+                         <Image src={item.image} alt="Om oss_Galleri" width={100} height={100} objectFit="cover"/>
+                        </div>
+                    );
+                })}
+                    {/* <div className='column'>
                         <img src={img1.src} className='img-column'></img>
                     </div> 
                     <div className='column'>
@@ -31,7 +39,7 @@ export default function Galery(props) {
                     </div>
                     <div className='column'>
                         <img src={img6.src} className='img-column'></img>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

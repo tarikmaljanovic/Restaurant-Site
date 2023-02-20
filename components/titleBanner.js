@@ -12,10 +12,10 @@ import phone from 'public/icons/phone.png'
 import basket from 'public/icons/basket.png'
 import arrow from 'public/icons/arrow.png'
 
-export default function TitleBanner() {
+export default function TitleBanner(props) {
+    const profile = props.profile;
     const [menuState, setMenuState] = useState(false);
     let visibilityCheck = menuState ? 'is-active' : '';
-
     return(
         <section className="hero is-large">
             <div className="hero-body titleBanner-hero p-0">
@@ -58,7 +58,7 @@ export default function TitleBanner() {
                                 <div className='notification location p-5'>
                                     <img src={location.src} alt='location'></img>
                                     <p className='address-label'>ADRESS</p>
-                                    <a href='https://goo.gl/maps/Z43GxJEqsvNWvLTVA' target={'_blank'}><p className='address'>Krankroksgatan 7, 721 38</p></a>
+                                    <a href='https://www.google.com/maps/place/Smedjegatan+4,+722+13+V%C3%A4ster%C3%A5s,+Sweden/@59.6117815,16.5463769,17z/data=!4m6!3m5!1s0x465e613929ab4357:0x4531e40ab5b69ad7!8m2!3d59.6117815!4d16.5463769!16s%2Fg%2F11c5fy4m5f' target={'_blank'}><p className='address'>{profile.address}</p></a>
                                 </div>
                             </div>
                             <div className='column'>

@@ -12,3 +12,8 @@ module.exports = {
     includePaths: [path.join(__dirname, 'styles')],
   },
 }
+module.exports = {
+  images: {
+    domains: ["guestro.s3.amazonaws.com"],
+  },
+};
