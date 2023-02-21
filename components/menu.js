@@ -64,7 +64,15 @@ export default function Menu(props) {
                                     <p className='item-description'>{item.description}</p>
                                     <p className='item-price'>{item.price}</p>
                                     <div className='item-tags'>
-                                        
+                                        {
+                                            item.dishtags.map((tag, index) => {
+                                                return (
+                                                    <>
+                                                        <p className='item-tag'>{tag.name}</p>
+                                                    </>
+                                                )
+                                            })
+                                        }
                                     </div>
                                 </div>
                             </div>
