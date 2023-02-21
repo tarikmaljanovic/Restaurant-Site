@@ -53,16 +53,12 @@
                     
                     gap: 10px;
 
-                    width: 104px;
-                    height: 41px;
                     /* Color / Primary */
 
                     background: #ECD4AC;
                     transition: 0.5s ease;
                     cursor: pointer;
                     .menu-option-label {
-                        width: 56px;
-                        height: 17px;
                         font-family: 'Montserrat';
                         font-style: normal;
                         font-weight: 700;
@@ -95,16 +91,12 @@
                     padding: 12px 24px;
                     gap: 10px;
 
-                    width: 104px;
-                    height: 41px;
                     /* Color / Primary */
 
                     background: #FFFFFF;
                     transition: 0.5s ease;
                     cursor: pointer;
                     .menu-option-label {
-                        width: 39px;
-                        height: 17px;
 
                         font-family: 'Montserrat';
                         font-style: normal;
@@ -146,106 +138,63 @@
             }
             .menu-body {
                 margin: 20px;
-                .menu-row {
-                   justify-content: center;
-                   .item-wimg {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: flex-start;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+                .item-noimg {
+                    flex-basis: 33.33333%;
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
                     .menu-item-description {
-                        width: 432px;
-                        height: 204px;
                         .item-title {
-                            width: 201px;
-                            height: 29px;
-
                             font-family: 'Montserrat';
                             font-style: normal;
                             font-weight: 600;
                             font-size: 24px;
                             line-height: 29px;
                             margin: 5px;
-
-                            /* Color / Black */
-
                             color: #000000;
-
-
-                            /* Inside auto layout */
-
-                            flex: none;
-                            order: 0;
-                            flex-grow: 0;
                         }
                         .item-description {
-                            width: 201px;
-                            height: 36px;
-
+                            overflow-wrap: break-word;
+                            inline-size: 400px;
                             font-family: 'Montserrat';
                             font-style: normal;
                             font-weight: 400;
                             font-size: 12px;
                             line-height: 18px;
                             margin: 5px;
-                            /* or 150% */
-
-
-                            /* Color / Grey */
-
                             color: #918E89;
-
-
-                            /* Inside auto layout */
-
-                            flex: none;
-                            order: 1;
-                            flex-grow: 0;
                         }
                         .item-price {
-                            width: 73px;
-                            height: 22px;
-
                             font-family: 'Montserrat';
                             font-style: normal;
                             font-weight: 700;
                             font-size: 18px;
                             line-height: 22px;
-                            margin: 20px 0px 0px 10px;
-                            /* identical to box height */
-
+                            margin: 20px 0px 0px 5px;
                             display: flex;
                             align-items: center;
                             text-align: right;
-
-                            /* Color / Shade 2 */
-
                             color: #A98456;
-
-
-                            /* Inside auto layout */
-
-                            flex: none;
-                            order: 0;
-                            flex-grow: 0;
                         }
                         .item-tags {
                             display: flex;
                             flex-direction: row;
+                            margin: 5px;
                             .item-tag {
                                 display: flex;
                                 flex-direction: row;
                                 align-items: flex-start;
                                 padding: 4px 8px 4px 8px;
                                 gap: 10px;
-                                margin: 5px;
-
-                                /* Color / Primary */
-
+                                margin: 0px 10px 0px 0px;
                                 background: #ECD4AC;
                                 border-radius: 100px;
-
-                                /* Inside auto layout */
-
                                 flex: none;
                                 order: 1;
                                 flex-grow: 0;
@@ -254,114 +203,64 @@
                                 font-weight: 700;
                                 font-size: 10px;
                                 line-height: 16px;
-                                /* identical to box height, or 160% */
-
-
-                                /* Color / Black */
-
                                 color: #000000;
                             }
                         }
                     }
-                   }
-                   .item-noimg {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: flex-start;
+                }
+                .item-wimg {
+                    flex-basis: 33.33333%;
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
                     .menu-item-description {
-                        width: 432px;
-                        height: 204px;
                         .item-title {
-                            width: 201px;
-                            height: 29px;
-
                             font-family: 'Montserrat';
                             font-style: normal;
                             font-weight: 600;
                             font-size: 24px;
                             line-height: 29px;
                             margin: 5px;
-
-                            /* Color / Black */
-
                             color: #000000;
-
-
-                            /* Inside auto layout */
-
-                            flex: none;
-                            order: 0;
-                            flex-grow: 0;
                         }
                         .item-description {
-                            width: 434px;
-                            height: 54px;
-
+                            overflow-wrap: break-word;
+                            inline-size: 200px;
+                            overflow-wrap: break-word;
                             font-family: 'Montserrat';
                             font-style: normal;
                             font-weight: 400;
                             font-size: 12px;
                             line-height: 18px;
                             margin: 5px;
-                            /* or 150% */
-
-
-                            /* Color / Grey */
-
                             color: #918E89;
-
-
-                            /* Inside auto layout */
-
-                            flex: none;
-                            order: 1;
-                            flex-grow: 0;
                         }
                         .item-price {
-                            width: 73px;
-                            height: 22px;
-
                             font-family: 'Montserrat';
                             font-style: normal;
                             font-weight: 700;
                             font-size: 18px;
                             line-height: 22px;
-                            margin: 20px 0px 0px 10px;
-                            /* identical to box height */
-
+                            margin: 20px 0px 0px 5px;
                             display: flex;
                             align-items: center;
                             text-align: right;
-
-                            /* Color / Shade 2 */
-
                             color: #A98456;
-
-
-                            /* Inside auto layout */
-
-                            flex: none;
-                            order: 0;
-                            flex-grow: 0;
                         }
                         .item-tags {
                             display: flex;
                             flex-direction: row;
+                            margin: 5px;
                             .item-tag {
                                 display: flex;
                                 flex-direction: row;
                                 align-items: flex-start;
                                 padding: 4px 8px 4px 8px;
                                 gap: 10px;
-                                margin: 5px;
-
-                                /* Color / Primary */
-
+                                margin: 0px 10px 0px 0px;
                                 background: #ECD4AC;
                                 border-radius: 100px;
-
-                                /* Inside auto layout */
-
                                 flex: none;
                                 order: 1;
                                 flex-grow: 0;
@@ -370,16 +269,10 @@
                                 font-weight: 700;
                                 font-size: 10px;
                                 line-height: 16px;
-                                /* identical to box height, or 160% */
-
-
-                                /* Color / Black */
-
                                 color: #000000;
                             }
                         }
                     }
-                   }
                 }
             }
         }

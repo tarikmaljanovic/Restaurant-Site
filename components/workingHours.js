@@ -41,13 +41,9 @@ export default function WorkingHours(props) {
             <hr className='dropdown-divider'></hr>
             <div className='dropdown-item special-workhours'>
                 {profile.custom_working_time_default.map((item, index) => {
-                    if(item.start == null && item.start == null) {
+                    if(item.closed == 1) {
                         return (
-                            <h4 className='special-workhours-label'><span className='date'>{item.date.split('-').join('/')}</span><span className='time'></span></h4>
-                        )
-                    } else {
-                        return (
-                            <h4 className='special-workhours-label'><span className='date'>{item.date.split('-').join('/')}</span><span className='time'> - {item.start.slice(0,5)} - {item.end.slice(0,5)}</span></h4>
+                            <h4 className='special-workhours-label'><span className='date'>{item.date.split('-').join('/')}</span><span className='time'>Stängd</span></h4>
                         )
                     }
                 })}

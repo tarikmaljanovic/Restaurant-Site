@@ -21,8 +21,6 @@ export default function TitleBanner(props) {
 
     const today = (new Date()).getDay();
     const workingHours = profile.working_time;
-    console.log(workingHours);
-    
     
     return(
         <section className="hero is-large">

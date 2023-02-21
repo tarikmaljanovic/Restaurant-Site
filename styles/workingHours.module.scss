@@ -104,7 +104,9 @@
         }
     }
     .special-workhours {
-        .special-workhours-label{
+        .special-workhours-label {
+            display: flex;
+            justify-content: space-between;
             .date {
                 font-family: 'Montserrat';
                 font-style: normal;

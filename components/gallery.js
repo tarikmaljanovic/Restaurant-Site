@@ -12,8 +12,10 @@ export default function Galery(props) {
                 <div className='columns is-gapless gallery-columns'>
                     {gallery[1].images.map((item, index) => {
                         return (
-                            <div className="column is-2 p-0" key={index}>
-                                <Image src={item.image} alt="Om oss_Galleri" width={1000} height={1000} className='img-column'/>
+                            <div className="column is-2" key={index}>
+                                <figure className='image is-square'>
+                                    <Image src={item.image} alt="Om oss_Galleri" width={1000} height={1000} className='img-column'/>
+                                </figure>
                             </div>
                         );
                     })}
