@@ -6,8 +6,7 @@
     .deliveryServices-container {
          .deliveryServices-columns {
             .left-title {
-                /* Auto layout */
-    
+
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
@@ -16,15 +15,11 @@
                 gap: 16px;
                 width: 546px;
                 height: 84px;
-    
-                /* Inside auto layout */
-    
+
                 flex: none;
                 order: 0;
-                flex-grow: 0; 
+                flex-grow: 0;
                 h3 {
-                    /* Beställ hemkörning */
-    
                     width: 546px;
                     height: 40px;
     
@@ -33,23 +28,14 @@
                     font-weight: 800;
                     font-size: 32px;
                     line-height: 40px;
-                    /* identical to box height, or 125% */
-    
-    
-                    /* Color / Black */
-    
+
                     color: #000000;
-    
-    
-                    /* Inside auto layout */
-    
+
                     flex: none;
                     order: 0;
                     flex-grow: 0;
                 }
                 p {
-                    /* Du kan beställa vår mat för hemkörning genom följande tjänster. */
-    
                     width: 546px;
                     height: 28px;
     
@@ -58,15 +44,8 @@
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 28px;
-                    /* identical to box height, or 175% */
-    
-    
-                    /* Color / Black */
-    
                     color: #000000;
-    
-                    /* Inside auto layout */
-    
+
                     flex: none;
                     order: 1;
                     flex-grow: 0;
@@ -74,10 +53,6 @@
             }
             .right-links{
                 .wolt {
-                    /* Frame 2 */
-
-                    /* Auto layout */
-
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
@@ -88,11 +63,7 @@
                     width: 161.9px;
                     height: 72px;
 
-                    /* Color / Primary */
-
                     background: #ECD4AC;
-
-                    /* Inside auto layout */
 
                     flex: none;
                     order: 0;
@@ -100,10 +71,6 @@
                     border-radius: 0%;
                 }
                 .foodora {
-                    /* Frame 2 */
-
-                    /* Auto layout */
-
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
@@ -114,11 +81,7 @@
                     width: 180.55px;
                     height: 72px;
 
-                    /* Color / Primary */
-
                     background: #ECD4AC;
-
-                    /* Inside auto layout */
 
                     flex: none;
                     order: 1;
@@ -126,10 +89,6 @@
                     border-radius: 0%;
                 }
                 .waytogo {
-                    /* Frame 2 */
-
-                    /* Auto layout */
-
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
@@ -140,11 +99,7 @@
                     width: 203.52px;
                     height: 72px;
 
-                    /* Color / Primary */
-
                     background: #ECD4AC;
-
-                    /* Inside auto layout */
 
                     flex: none;
                     order: 2;

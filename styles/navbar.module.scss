@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
+@import 'bulma/sass/utilities/mixins.sass';
 
 .navbar-header {
     height: 66px;
@@ -17,17 +18,36 @@
     position: fixed;
     z-index: 100;
     display: flex;
+
+    @include mobile {
+        height: 110px;
+        position: relative;
+        align-items: flex-end;
+    }
     .navbar-container {
+        @include mobile {
+            padding: 20px;
+        }
         .navbar-columns {
+            @include mobile {
+                display: flex;
+                justify-content: space-between;
+            }
             .navbar-logo {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                @include mobile {
+                    justify-content: flex-start;
+                }
             }
             .navbar-options {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                @include mobile {
+                    display: none;
+                }
                 .options {
                     /* Auto layout */
 
@@ -158,6 +178,9 @@
             }
             
             .navbar-button {
+                @include mobile {
+                   display: none;
+                }
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -199,6 +222,17 @@
             .navbar-orderButton:hover {
                 background-color: #d4b989;
                 transition: 0.5s ease;
+            }
+            .navbar-mobile-buttons {
+                display: none;
+                @include mobile {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                }
+                img {
+                    padding: 5px;
+                }
             }
         }
     }

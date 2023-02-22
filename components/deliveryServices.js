@@ -7,7 +7,7 @@ import waytogo from 'public/images/delivery ServicesImages/waytogo.png'
 
 export default function DeliveryServices() {
     return (
-        <section className="section deliveryServices-section is-small p-0">
+        <section className="section deliveryServices-section is-small">
             <div className='container deliveryServices-container'>
                 <div className='columns deliveryServices-columns'>
                     <div className='column left-title'>

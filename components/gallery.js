@@ -7,7 +7,7 @@ export default function Galery(props) {
     const gallery = props.gallery;
 
     return(
-        <section className="gallery-section is-small">
+        <section className="section gallery-section is-small p-0">
             <div className='container is-fluid m-0 p-0 gallery-container'>
                 <div className='columns is-gapless gallery-columns'>
                     {gallery[1].images.map((item, index) => {

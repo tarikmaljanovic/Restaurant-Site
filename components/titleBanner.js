@@ -30,7 +30,7 @@ export default function TitleBanner(props) {
                     <img src={backgroundImg.src} className='titleBanner-background'></img>
                         <div className='container px-0 is-fluid titleBanner-head-container'>
                             <div className='columns titleBanner-head-columns'>
-                                <div className='column p-0 titleBanner-head-column'>
+                                <div className='column p-0 titleBanner-head-column title-column'>
                                     <p className='bannerTitle'>Hörnet & <br/>Västerås</p>
                                 </div>
                                 <div className='column p-0 titleBanner-head-column'>
@@ -44,19 +44,21 @@ export default function TitleBanner(props) {
                             <div className='column infocard-hours'>
                                 <div className='notification hours p-5'>
                                     <img src={clock.src} alt='clock' className='clock-icon'></img>
-                                    <p>Öppettider</p>
-                                    <div className={`dropdown ${visibilityCheck}`}>
-                                    <div className="dropdown-trigger">
-                                        <button className="button " aria-haspopup="true" aria-controls="dropdown-menu2" onClick={() => setMenuState(!menuState)}>
-                                        <span className='button-content'>IDAG: {(today == 6 || today == 7 ? 'Stängd' : workingHours[today-1].time)}</span>
-                                        <span className="icon is-small">
-                                            <img src={arrow.src} alt='arrow-icon' className={`arrow-${visibilityCheck}`}></img>
-                                        </span>
-                                        </button>
-                                    </div>
-                                    <div className="dropdown-menu" id="dropdown-menu2" role="menu">
-                                        <WorkingHours profile={profile} />
-                                    </div>
+                                    <div class='mobile-container'>
+                                        <p>Öppettider</p>
+                                        <div className={`dropdown ${visibilityCheck}`}>
+                                            <div className="dropdown-trigger">
+                                                <button className="button " aria-haspopup="true" aria-controls="dropdown-menu2" onClick={() => setMenuState(!menuState)}>
+                                                    <span className='button-content'>IDAG: {(today == 6 || today == 7 ? 'Stängd' : workingHours[today-1].time)}</span>
+                                                    <span className="icon is-small">
+                                                        <img src={arrow.src} alt='arrow-icon' className={`arrow-${visibilityCheck}`}></img>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <div className="dropdown-menu" id="dropdown-menu2" role="menu">
+                                                <WorkingHours profile={profile} />
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
