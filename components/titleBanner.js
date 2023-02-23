@@ -12,6 +12,7 @@ import location from 'public/icons/location.png'
 import phone from 'public/icons/phone.png'
 import basket from 'public/icons/basket.png'
 import arrow from 'public/icons/arrow.png'
+import mobileOvalBasket from 'public/icons/mobileOvalBasket.png'
 
 export default function TitleBanner(props) {
     const profile = props.profile;
@@ -44,7 +45,7 @@ export default function TitleBanner(props) {
                             <div className='column infocard-hours'>
                                 <div className='notification hours p-5'>
                                     <img src={clock.src} alt='clock' className='clock-icon'></img>
-                                    <div class='mobile-container'>
+                                    <div className='mobile-container'>
                                         <p>Öppettider</p>
                                         <div className={`dropdown ${visibilityCheck}`}>
                                             <div className="dropdown-trigger">
@@ -65,27 +66,40 @@ export default function TitleBanner(props) {
                             <div className='column'>
                                 <div className='notification location p-5'>
                                     <img src={location.src} alt='location'></img>
-                                    <p className='address-label'>ADRESS</p>
-                                    <a href={`https://www.google.com/maps/place/${profile.address}14z`} target={'_blank'}><p className='address'>{profile.address}</p></a>
+                                    <div className='mobile-container'>
+                                        <p className='address-label'>ADRESS</p>
+                                        <a href={`https://www.google.com/maps/place/${profile.address}14z`} target={'_blank'}><p className='address'>{profile.address}</p></a>
+                                    </div>
                                 </div>
                             </div>
                             <div className='column'>
-                                <div className='notification phone p5'>
+                                <div className='notification phone p-5'>
                                     <img src={phone.src} alt='phone'></img>
-                                    <p className='phonenumber-label'>TELEFONNUMMER</p>
-                                    <a href={`tel:${profile.phone}`}><p className='phonenumber'>{profile.phone}</p></a>
+                                    <div className='mobile-container'>
+                                        <p className='phonenumber-label'>TELEFONNUMMER</p>
+                                        <a href={`tel:${profile.phone}`}><p className='phonenumber'>{profile.phone}</p></a>
+                                    </div>
                                 </div>
                             </div>
                             <div className='column'>
-                                <div className='notification takeaway p-5'>
-                                    <p className='takeaway-label'>TAKEAWAY?</p>
-                                    <p className='order-takeaway'>Beställ takeaway från oss!</p>
-                                    <a href='https://www.foodora.se/en/restaurant/wuvx/hornet-vasteras' target={'_blank'}>
-                                        <button className='button takeaway-button'>
-                                            <img src={basket.src} alt='basket'></img>
-                                            <p className='order-button-label'>BESTÄLL TAKEAWAY</p>
-                                        </button>
-                                    </a>
+                                <div className='notification takeaway p-0'>
+                                    <div className='mobile-container'>
+                                        <img src={mobileOvalBasket.src}></img>
+                                        <div class='inner'>
+                                            <p className='takeaway-label'>BESTÄLL TAKEAWAY</p>
+                                            <p className='order-takeaway'>Beställ takeaway från oss!</p>
+                                        </div>
+                                    </div>
+                                    <div className='desktop-container'>
+                                        <p className='takeaway-label'>TAKEAWAY?</p>
+                                        <p className='order-takeaway'>Beställ takeaway från oss!</p>
+                                        <a href='https://www.foodora.se/en/restaurant/wuvx/hornet-vasteras' target={'_blank'}>
+                                            <button className='button takeaway-button'>
+                                                <img src={basket.src} alt='basket'></img>
+                                                <p className='order-button-label'>BESTÄLL TAKEAWAY</p>
+                                            </button>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
