@@ -56,7 +56,7 @@ export default function NavBar() {
                         </a> 
                     </div> 
                     <div class='column navbar-mobile-buttons'>
-                        <img src={mobileBasket.src}/>
+                    <a href='https://www.foodora.se/en/restaurant/wuvx/hornet-vasteras' target={'_blank'}><img src={mobileBasket.src}/></a>
                         <img src={hamburger.src}/>
                     </div>
                 </div>
