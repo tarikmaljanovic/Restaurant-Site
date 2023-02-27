@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
+@import 'bulma/sass/utilities/mixins.sass';
 
 .takeawayBanner-section {
         .takeawayBanner-container {
@@ -14,10 +15,6 @@
             .takeaway-label {
                 /* TAKEAWAY? */
 
-                width: 660px;
-                height: 20px;
-
-
                 font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: 600;
@@ -30,6 +27,7 @@
                 /* Color / Shade 2 */
 
                 color: #A98456;
+                text-overflow: clip;
 
             }
             .takeaway-title {
@@ -49,6 +47,11 @@
                 /* Color / Black */
 
                 color: #000000;
+                @include mobile {
+                    width: auto;
+                    height: auto;
+                    text-overflow: clip
+                }
             }
             .takeaway-subtitle {
                 width: 660px;
@@ -67,6 +70,11 @@
                 /* Color / Black */
 
                 color: #000000;
+                @include mobile {
+                    width: auto;
+                    height: auto;
+                    text-overflow: clip;
+                }
             }
             .takeaway-button {
                 display: flex;
@@ -85,6 +93,11 @@
 
                 background: #FFFFFF;
                 border-radius: 0;
+                @include mobile {
+                    width: auto;
+                    height: auto;
+                    text-overflow: clip;
+                }
                 .button-label {
 
                 height: 20px;

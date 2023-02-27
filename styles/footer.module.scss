@@ -1,5 +1,6 @@
 @import 'https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap';
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
+@import 'bulma/sass/utilities/mixins.sass';
 
 .footer {
     padding: 48px 48px 48px 48px;
@@ -15,8 +16,16 @@
                 flex-direction: column;
             .footer-inner {
                 .footer-inner-content {
-                    .footer-icon {
-                        padding: 10px;
+                    @include mobile {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .icons {
+                        .footer-icon {
+                            padding: 10px;
+                        }
                     }
                     .copyright {
                         padding: 10px;
@@ -40,6 +49,9 @@
                     bottom: 70px;
                     right: 100px;
                     z-index: 100000;
+                    @include mobile {
+                        position: relative;
+                    }
                 }
             }
         }

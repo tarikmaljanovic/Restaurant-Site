@@ -17,8 +17,10 @@ export default function Footer(props) {
                     <div className='column footer-socials'>
                         <div className='footer-inner'>
                             <div className='footer-inner-content'>
-                                <a href={profile.instagram} target={'_blank'}><img src={instagram.src} className='footer-icon'></img></a>
-                                <a href={profile.instagram} target={'_blank'}><img src={facebook.src} className='footer-icon'></img></a>
+                                <div class='icons'>
+                                    <a href={profile.instagram} target={'_blank'}><img src={instagram.src} className='footer-icon'></img></a>
+                                    <a href={profile.instagram} target={'_blank'}><img src={facebook.src} className='footer-icon'></img></a>
+                                </div>
                                 <p className='copyright'>© Hörnet Västerås 2020 • All rights reserved.</p>
                             </div>
                         </div>

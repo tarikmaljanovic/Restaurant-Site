@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
+@import 'bulma/sass/utilities/mixins.sass';
 
 .info-section {
     .info-container {
@@ -160,8 +161,14 @@
             .info-right {
                 display: flex;
                 align-items: center;
-                justify-content: center;
-                .info-map {
+                justify-content: center;      
+                .map {
+                    iframe {
+                        @include mobile {
+                            width: auto;
+                            height: 368px;
+                        }
+                    }  
                 }
             }
         }
