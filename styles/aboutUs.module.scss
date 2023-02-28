@@ -18,52 +18,46 @@
                     display: flex;
                     justify-content: flex-start;
                     flex-direction: column;
+                    @include mobile {
+                        padding: 20px;
+                    }
                 .aboutus-label {
                     display: flex;
                     justify-self: center;
                     align-items: flex-start;
                     flex-direction: column;
+                    @include mobile {
+                        align-items: center;
+                    }
                     .aboutus-label-back {
                         width: 223px;
                         height: 66px;
-
                         font-family: 'Montserrat';
                         font-style: normal;
                         font-weight: 800;
                         font-size: 54px;
                         line-height: 66px;
-                        /* identical to box height */
-
-
-                        /* Color / Black */
-
                         color: #000000;
-
                         opacity: 0.05;
-                        
+                        @include mobile {
+                            text-align: center;
+                        }
                     }
                     .aboutus-label-front {
-                        /* Om Oss */
-
                         width: 99px;
                         height: 29px;
-                        
                         font-family: 'Montserrat';
                         font-style: normal;
                         font-weight: 800;
                         font-size: 24px;
                         line-height: 145px;
-
-                        /* Color / Black */
-
                         color: #000000;
-                        
+                        @include mobile {
+                            text-align: center;
+                        }
                     }
                 }
                 .aboutus-title {
-                    /* Hörnet Västerås */
-
-
                     width: 275px;
                     height: 40px;
 
@@ -72,28 +66,29 @@
                     font-weight: 800;
                     font-size: 32px;
                     line-height: 40px;
-                    /* identical to box height, or 125% */
-
-
-                    /* Color / Black */
-
                     color: #000000;
+                    @include mobile {
+                        text-overflow: clip;
+                        width: auto;
+                        height: auto;
+                        text-align: center;
+                    }
                 }
                 .aboutus-description {
                     width: 428px;
                     height: 84px;
-
                     font-family: 'Montserrat';
                     font-style: normal;
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 28px;
-                    /* or 175% */
-
-
-                    /* Color / Black */
-
                     color: #000000;
+                    @include mobile {
+                        text-overflow: clip;
+                        width: auto;
+                        height: auto;
+                        text-align: center;
+                    }
                 }
             }
             }   

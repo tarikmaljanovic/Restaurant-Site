@@ -9,48 +9,64 @@
     background-size: cover;
     background-blend-mode: soft-light;
     .footer-container {
-        .footer-socials {
+        .footer-columns {
+            @include mobile {
+                display:  none;
+            }
+            .footer-socials {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                .footer-inner {
+                    .footer-inner-content {
+                        .icons {
+                            .footer-icon {
+                                padding: 10px;
+                            }
+                        }
+                        .copyright {
+                            padding: 10px;
+                        }
+                    }
+                }
+            }  
+            .footer-logo {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-            .footer-inner {
-                .footer-inner-content {
-                    @include mobile {
-                        display: flex;
-                        flex-direction: column-reverse;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                    .icons {
-                        .footer-icon {
-                            padding: 10px;
-                        }
-                    }
-                    .copyright {
-                        padding: 10px;
+            }
+            .footer-toTop {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .footer-toTop-inner {
+                    .toTop {
+                        position: fixed;
+                        bottom: 70px;
+                        right: 100px;
+                        z-index: 100000;
                     }
                 }
             }
-        }  
-        .footer-logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
         }
-        .footer-toTop {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .footer-toTop-inner {
-                .toTop {
-                    position: fixed;
-                    bottom: 70px;
-                    right: 100px;
-                    z-index: 100000;
-                    @include mobile {
-                        position: relative;
+        .footer-mobile-columns {
+            display:  none;
+            
+            @include mobile {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .footer-socials {
+                .icons {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .footer-icon {
+                        padding: 20px;
                     }
                 }
             }

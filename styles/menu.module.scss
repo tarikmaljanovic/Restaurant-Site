@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
 @import 'https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@100;400;700&display=swap';
+@import 'bulma/sass/utilities/mixins.sass';
 
 .menu-section {
     .menu-container {
@@ -17,11 +18,7 @@
                     font-weight: 800;
                     font-size: 24px;
                     line-height: 20px;
-
-                    /* Color / Black */
-
                     color: #000000;
-
                 }
                 .menu-label-back {
                     font-family: 'Montserrat';
@@ -29,14 +26,8 @@
                     font-weight: 800;
                     font-size: 54px;
                     line-height: 0px;
-                    /* identical to box height */
-
                     text-align: center;
-
-                    /* Color / Black */
-
                     color: #000000;
-
                     opacity: 0.05;
                 }
             }
@@ -44,39 +35,31 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                @include mobile {
+                    overflow: scroll;
+                }
                 .menu-navbar-option-active {
                     display: flex;
                     flex-direction: row;
                     align-items: center;
                     justify-content: center;
                     padding: 12px 24px;
-                    
                     gap: 10px;
-
-                    /* Color / Primary */
-
                     background: #ECD4AC;
                     transition: 0.5s ease;
                     cursor: pointer;
+                    
                     .menu-option-label {
                         font-family: 'Montserrat';
                         font-style: normal;
                         font-weight: 700;
                         font-size: 14px;
                         line-height: 17px;
-                        /* identical to box height */
-
-
-                        /* Color / Black */
-
                         color: #000000;
-
-
-                        /* Inside auto layout */
-
                         flex: none;
                         order: 0;
                         flex-grow: 0;
+                        text-overflow: clip;
                     }
                 }
                 .menu-navbar-option-active:hover {
@@ -90,26 +73,16 @@
                     justify-content: center;
                     padding: 12px 24px;
                     gap: 10px;
-
-                    /* Color / Primary */
-
                     background: #FFFFFF;
                     transition: 0.5s ease;
                     cursor: pointer;
                     .menu-option-label {
-
                         font-family: 'Montserrat';
                         font-style: normal;
                         font-weight: 400;
                         font-size: 14px;
                         line-height: 17px;
-                        /* identical to box height */
-
-
-                        /* Color / Black */
-
                         color: #000000;
-
                     }
                 }
                 .menu-navbar-option-inactive:hover {
@@ -122,17 +95,12 @@
                 justify-content: center;
                 align-items: center;
                 .category-label {
-                    
                     margin: 20px;
-
                     font-family: 'Montserrat';
                     font-style: normal;
                     font-weight: 800;
                     font-size: 24px;
                     line-height: 29px;
-
-                    /* Color / Black */
-
                     color: #000000;
                 }
             }

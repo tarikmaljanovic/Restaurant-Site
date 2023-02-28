@@ -36,6 +36,28 @@ export default function Footer(props) {
                         </div>
                     </div>
                 </div>
+                <div class='columns is-fluid footer-mobile-columns'>
+                    <div className='column footer-toTop'>
+                        <div className='footer-toTop-inner'>
+                            <Link to='titleBanner-hero' smooth={true} offset={0} duration={500}>
+                                <img src={toTop.src} className='toTop'></img>
+                            </Link>
+                        </div>
+                    </div>
+                    <div className='column footer-logo'>
+                        <img src={logo.src} alt='logo' className='footer-logo-img'></img>
+                    </div>
+                    <div className='column footer-socials'>
+                        
+                                <div class='icons'>
+                                    <a href={profile.instagram} target={'_blank'}><img src={instagram.src} className='footer-icon'></img></a>
+                                    <a href={profile.instagram} target={'_blank'}><img src={facebook.src} className='footer-icon'></img></a>
+                                </div>
+                                <p className='copyright'>© Hörnet Västerås 2020 • All rights reserved.</p>
+                            
+                        
+                    </div>
+                </div>
             </div>
         </div>
     )
