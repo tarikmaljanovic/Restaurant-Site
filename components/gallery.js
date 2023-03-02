@@ -9,10 +9,10 @@ export default function Galery(props) {
     return(
         <section className="section gallery-section is-small p-0">
             <div className='container is-fluid m-0 p-0 gallery-container'>
-                <div className='columns is-gapless gallery-columns'>
+                <div className='columns is-gapless gallery-columns is-flex'>
                     {gallery[1].images.map((item, index) => {
                         return (
-                            <div className="column is-2" key={index}>
+                            <div className="column is-2-desktop is-6-mobile" key={index}>
                                 <figure className='image is-square'>
                                     <Image src={item.image} alt="Om oss_Galleri" width={1000} height={1000} className='img-column'/>
                                 </figure>
