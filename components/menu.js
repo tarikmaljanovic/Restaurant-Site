@@ -19,9 +19,9 @@ export default function Menu(props) {
                         <p className='menu-label-front'>Meny</p>
                     </div>
                     <div className='row menu-navbar'>
-                        {menu.categories.map((item, index) => {
+                        {menu.categories.map((item) => {
                             return(
-                                <div className={`menu-navbar-option-${option == item.name ? 'active' : 'inactive'}`} onClick={()=>setOption(item.name)}>
+                                <div key={item.id} className={`menu-navbar-option-${option == item.name ? 'active' : 'inactive'}`} onClick={()=>setOption(item.name)}>
                                     <p className='menu-option-label'>{item.name}</p>
                                 </div>
                             )
@@ -34,21 +34,19 @@ export default function Menu(props) {
                         <p className='category-label'>Category</p>
                     </div>
                     <div className='row menu-body'>
-                        {current_category.items.map((item, index) => {
+                        {current_category.items.map((item) => {
                             if(item.image.full == '') {
                                 return (
-                                    <div className='item-noimg'>
+                                    <div key={item.id} className='item-noimg'>
                                         <div className='menu-item-description'>
                                             <p className='item-title'>{item.name}</p>
                                             <p className='item-description'>{item.description}</p>
                                             <p className='item-price'>{item.price}</p>
                                             <div className='item-tags'>
                                                 {
-                                                    item.dishtags.map((tag, index) => {
+                                                    item.dishtags.map((tag, idx) => {
                                                         return (
-                                                            <>
-                                                                <p className='item-tag'>{tag.name}</p>
-                                                            </>
+                                                            <p key={idx} className='item-tag'>{tag.name}</p>
                                                         )
                                                     })
                                                 }

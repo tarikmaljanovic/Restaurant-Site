@@ -55,124 +55,31 @@
                     flex-direction: row;
                     align-items: flex-start;
                     padding: 0px;
-                    gap: 40px;
-
-                    
+                    gap: 40px;                    
                     width: 325px;
                     height: 17px;
-                    .hem {
-                        /* HEM */
 
-                        width: 35px;
-                        height: 17px;
+                    .option {
+                        font-weight: 400;
+                        color: #918E89;
+                        transition: 0.2s ease;
 
                         font-family: 'Montserrat';
                         font-style: normal;
                         font-weight: 700;
                         font-size: 13px;
                         line-height: 17px;
-                        /* identical to box height */
-
-
-                        /* Color / Black */
-
-                        color: #000000;
-
-
-                        /* Inside auto layout */
 
                         flex: none;
-                        order: 0;
                         flex-grow: 0;
                         cursor: pointer;
-                    }
-                    .meny {
-                        /* MENY */
-        
-                        width: 44px;
-                        height: 17px;
-        
-                        font-family: 'Montserrat';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 13px;
-                        line-height: 17px;
-                        /* identical to box height */
-        
-        
-                        /* Color / Grey */
-        
                         color: #918E89;
-        
-        
-                        /* Inside auto layout */
-        
-                        flex: none;
-                        order: 1;
-                        flex-grow: 0;
-                        cursor: pointer;
-                    }
-                    .om-oss {
-                        /* OM OSS */
-        
-                        width: 58px;
-                        height: 17px;
-        
-                        font-family: 'Montserrat';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 13px;
-                        line-height: 17px;
-                        /* identical to box height */
-        
-        
-                        /* Color / Grey */
-        
-                        color: #918E89;
-        
-        
-                        /* Inside auto layout */
-        
-                        flex: none;
-                        order: 2;
-                        flex-grow: 0;
-                        cursor: pointer;
-                    }
-                    .kontakt {
-                        /* KONTAKT */
-        
-                        width: 68px;
-                        height: 17px;
-        
-                        font-family: 'Montserrat';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 13px;
-                        line-height: 17px;
-                        /* identical to box height */
-        
-        
-                        /* Color / Grey */
-        
-                        color: #918E89;
-        
-        
-                        /* Inside auto layout */
-        
-                        flex: none;
-                        order: 3;
-                        flex-grow: 0;
-                        cursor: pointer;
-                    }
-                    .-active {
-                        font-weight: 700;
-                        color: #000000;
-                        transition: 0.2s ease;
-                    }
-                    .-inactive {
-                        font-weight: 400;
-                        color: #918E89;
-                        transition: 0.2s ease;
+
+                        &.active {
+                            font-weight: 700;
+                            color: #000;
+                            transition: 0.2s ease;
+                        }
                     }
                 }
             }

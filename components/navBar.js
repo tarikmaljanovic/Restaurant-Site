@@ -1,6 +1,3 @@
-import { Inter } from '@next/font/google'
-import styles from 'styles/navbar.module.scss'
-import { render } from 'react-dom'
 import { Link } from 'react-scroll'
 import { useState, useEffect } from 'react'
 import logo from 'public/images/Logo.png'
@@ -9,18 +6,30 @@ import mobileBasket from 'public/icons/mobileBasket.png'
 import hamburger from 'public/icons/hamburger.png'
 
 export default function NavBar() {
-    const [hem, setHem] = useState(false);
-    const [meny, setMeny] = useState(false);
-    const [omoss, setOmoss] = useState(false);
-    const [kontakt, setKontakt] = useState(false);
+    const [activeItem, setActiveItem] = useState('home')
+
+    const onWindowScroll = () => {
+        let activeItem = 'home';
+
+        if (window.scrollY >= 0 && window.scrollY <= 900) {
+            activeItem = 'home';
+        } else if (window.scrollY > 900 && window.scrollY <= 2000) {
+            activeItem = 'menu';
+        } else if (window.scrollY > 2000 && window.scrollY <= 2400) {
+            activeItem = 'about';
+        } else {
+            activeItem = 'contact';
+        }
+        
+        setActiveItem(activeItem);
+    }
     
     useEffect(() => {
-        window.addEventListener('scroll', () => {
-            setHem(window.scrollY >= 0 && window.scrollY <= 900);
-            setMeny(window.scrollY > 900 && window.scrollY <= 2000);
-            setOmoss(window.scrollY > 2000 && window.scrollY <= 2400);
-            setKontakt(window.scrollY > 2400);
-        })
+        window.addEventListener('scroll', onWindowScroll)
+
+        return () => {
+            window.removeEventListener('scroll', onWindowScroll)
+        }
     }, []);
     
 
@@ -33,17 +42,17 @@ export default function NavBar() {
                     </div> 
                     <div className='column navbar-options'>
                         <ul className='options'>
-                            <Link to='titleBanner-hero' smooth={true} offset={0} duration={500}>
-                                <li className={`hem ${hem ? '-active' : '-inactive'}`}>HEM</li>
+                            <Link to='titleBanner-hero' smooth offset={0} duration={500}>
+                                <li className={`option ${activeItem === 'home' ? 'active' : ''} `}>HEM</li>
                             </Link>
-                            <Link to='menu-section' smooth={true} offset={0} duration={500}>
-                                <li className={`meny ${meny ? '-active' : '-inactive' }`}>MENY</li>
+                            <Link to='menu-section' smooth offset={0} duration={500}>
+                                <li className={`option ${activeItem === 'menu' ? 'active' : ''} `}>MENY</li>
                             </Link>
-                            <Link to='aboutus-section' smooth={true} offset={-50} duration={500}>
-                                <li className={`om-oss ${omoss ? '-active' : '-inactive'}`}>OM OSS</li>
+                            <Link to='aboutus-section' smooth offset={-50} duration={500}>
+                                <li className={`option ${activeItem === 'about' ? 'active' : ''} `}>OM OSS</li>
                             </Link>
-                            <Link to='info-section' smooth={true} offset={0} duration={500}>
-                                <li className={`kontakt ${kontakt ? '-active' : '-inactive'}`}>KONTAKT</li>
+                            <Link to='info-section' smooth offset={0} duration={500}>
+                                <li className={`option ${activeItem === 'contact' ? 'active' : ''} `}>KONTAKT</li>
                             </Link>
                         </ul>
                     </div> 
@@ -55,7 +64,7 @@ export default function NavBar() {
                             </button>
                         </a> 
                     </div> 
-                    <div class='column navbar-mobile-buttons'>
+                    <div className='column navbar-mobile-buttons'>
                     <a href='https://www.foodora.se/en/restaurant/wuvx/hornet-vasteras' target={'_blank'}><img src={mobileBasket.src}/></a>
                         <img src={hamburger.src}/>
                     </div>

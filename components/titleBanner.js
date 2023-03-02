@@ -86,7 +86,7 @@ export default function TitleBanner(props) {
                                 <a href='https://www.foodora.se/en/restaurant/wuvx/hornet-vasteras' target={'_blank'}>
                                     <div className='mobile-container'>
                                             <img src={mobileOvalBasket.src}></img>
-                                            <div class='inner'>
+                                            <div className='inner'>
                                                 <p className='takeaway-label'>BESTÄLL TAKEAWAY</p>
                                                 < p className='order-takeaway'>Beställ takeaway från oss!</p>
                                             </div>

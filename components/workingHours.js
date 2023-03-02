@@ -17,14 +17,14 @@ export default function WorkingHours(props) {
                     {profile.working_time.map((item, index) => {
                         if(item.closed == 0) {
                             return (
-                                <div className='row day-row'>
+                                <div key={`work-time-dropdown-item-${index}`} className='row day-row'>
                                     <h4 className='day'>{days[index]}</h4>
                                     <h4 className='time'>{item.time}</h4>
                                 </div>
                             )
                         } else {
                             return (
-                                <div className='row day-row'>
+                                <div key={`work-time-open-${index}`} className='row day-row'>
                                     <h4 className='day'>{days[index]}</h4>
                                     <h4 className='time'>Stängd</h4>
                                 </div>
@@ -43,7 +43,7 @@ export default function WorkingHours(props) {
                 {profile.custom_working_time_default.map((item, index) => {
                     if(item.closed == 1) {
                         return (
-                            <h4 className='special-workhours-label'><span className='date'>{item.date.split('-').join('/')}</span><span className='time'>Stängd</span></h4>
+                            <h4 key={`work-time-def-${index}`} className='special-workhours-label'><span className='date'>{item.date.split('-').join('/')}</span><span className='time'>Stängd</span></h4>
                         )
                     }
                 })}

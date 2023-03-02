@@ -2,6 +2,7 @@ import { render } from 'react-dom'
 import { Inter } from '@next/font/google'
 import styles from 'styles/informationSection.module.scss'
 import Map from './map'
+import { Fragment } from 'react';
 
 export default function InformationSection(props) {
     const profile = props.profile;
@@ -30,14 +31,14 @@ export default function InformationSection(props) {
                                 {profile.working_time.map((item, index) => {
                                     if(item.closed == 0) {
                                         return (
-                                            <div className='day'>
+                                            <div key={`working-time-${index}`} className='day'>
                                                 <p className='day-label'>{days[index]}</p>
                                                 <p className='day-time'>{item.time}</p>
                                             </div>
                                         )
                                     } else {
                                         return (
-                                            <div className='day'>
+                                            <div key={`working-time-info-${index}`} className='day'>
                                                 <p className='day-label'>{days[index]}</p>
                                                 <p className='day-time'>Stängd</p>
                                             </div>
@@ -51,10 +52,10 @@ export default function InformationSection(props) {
                             {profile.custom_working_time_default.map((item, index) => {
                                 if(item.closed == 1) {
                                     return (
-                                        <>
+                                        <Fragment key={`working-time-def-${index}`}>
                                             <p className='special-date m-2'>{item.date.split('-').join('/')}</p>
                                             <p className='special-time m-2'>Stängd</p>
-                                        </>
+                                        </Fragment>
                                     )
                                 }
                             })}
