@@ -19,7 +19,7 @@ export default function Menu(props) {
                         <p className='menu-label-front'>Meny</p>
                     </div>
                     <div className='row menu-navbar'>
-                    {menu.categories.map((item, index) => {
+                        {menu.categories.map((item, index) => {
                             return(
                                 <div className={`menu-navbar-option-${option == item.name ? 'active' : 'inactive'}`} onClick={()=>setOption(item.name)}>
                                     <p className='menu-option-label'>{item.name}</p>
