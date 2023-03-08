@@ -12,6 +12,7 @@ import Footer from 'components/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
+  //
 
   return (
     <div className='view'>
