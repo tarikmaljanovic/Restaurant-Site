@@ -54,21 +54,14 @@
                 }
             }
             .takeaway-subtitle {
-                width: 660px;
+                width: 700px;
                 height: 24px;
-
-
                 font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 24px;
-                /* identical to box height, or 150% */
-
                 text-align: center;
-
-                /* Color / Black */
-
                 color: #000000;
                 @include mobile {
                     width: auto;
@@ -87,10 +80,6 @@
 
                 width: 315px;
                 height: 48px;
-
-
-                /* Color / White */
-
                 background: #FFFFFF;
                 border-radius: 0;
                 @include mobile {
@@ -110,11 +99,6 @@
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 20px;
-                /* identical to box height */
-
-
-                /* Color / Black */
-
                 color: #000000;
                 }
             }

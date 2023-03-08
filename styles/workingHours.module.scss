@@ -16,12 +16,7 @@
             font-weight: 600;
             font-size: 14px;
             line-height: 16px;
-            /* identical to box height, or 114% */
-
             text-align: center;
-
-            /* Color / Black */
-
             color: #000000;
         }
     }
@@ -44,15 +39,7 @@
                     font-weight: 700;
                     font-size: 16px;
                     line-height: 24px;
-                    /* identical to box height, or 150% */
-
-
-                    /* Color / Primary */
-
                     color: #ECD4AC;
-
-
-                    /* Inside auto layout */
 
                     flex: none;
                     order: 0;
@@ -67,11 +54,6 @@
                     font-weight: 600;
                     font-size: 16px;
                     line-height: 24px;
-                    /* identical to box height, or 150% */
-
-
-                    /* Color / Black */
-
                     color: #000000;
                 }
             }
@@ -88,16 +70,7 @@
             font-weight: 600;
             font-size: 14px;
             line-height: 16px;
-            /* identical to box height, or 114% */
-
-
-            /* Color / Black */
-
             color: #000000;
-
-
-            /* Inside auto layout */
-
             flex: none;
             order: 1;
             flex-grow: 0;
@@ -113,16 +86,7 @@
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 24px;
-                /* identical to box height, or 150% */
-
-
-                /* Color / Primary */
-
                 color: #ECD4AC;
-
-
-                /* Inside auto layout */
-
                 flex: none;
                 order: 0;
                 flex-grow: 0;
@@ -133,11 +97,6 @@
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 24px;
-                /* identical to box height, or 150% */
-
-
-                /* Color / Black */
-
                 color: #000000;
             }
         }

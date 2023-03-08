@@ -86,7 +86,6 @@
                         padding: 0;
                     }
                     .hours {
-                        /* Rectangle 14 */
                         box-sizing: border-box;
                         height: 157px;
                         width: 318px;
@@ -127,9 +126,6 @@
 
                                 width: 195px;
                                 height: 42px;
-
-                                /* Color / Primary */
-
                                 background: #ECD4AC;
                                 border-radius: 0%;
                                 @include mobile {
@@ -137,9 +133,6 @@
                                     height: 42px;
                                 }
                                 .button-content {
-                                    /* Monday – Friday */
-
-
                                     width: 137px;
                                     height: 24px;
 
@@ -148,17 +141,8 @@
                                     font-weight: 700;
                                     font-size: 14px;
                                     line-height: 24px;
-                                    /* identical to box height, or 171% */
-
                                     text-transform: uppercase;
-
-                                    /* Color / Black */
-
                                     color: #000000;
-
-
-                                    /* Inside auto layout */
-
                                     flex: none;
                                     order: 0;
                                     flex-grow: 0;
@@ -180,24 +164,16 @@
                             }
                         }
                         p {
-                            /* Öppettider */
-
-                            width: 94px;
+                            width: 150px;
                             height: 14px;
-
                             font-family: 'Montserrat';
                             font-style: normal;
                             font-weight: 600;
                             font-size: 14px;
                             line-height: 14px;
                             margin: 10px;
-                            /* identical to box height, or 100% */
-
                             text-align: center;
                             text-transform: uppercase;
-
-                            /* Color / Grey */
-
                             color: #918E89;
                             @include mobile {
                                 margin: 5px 0px 5px 0px;
@@ -206,13 +182,9 @@
                     }
                     }
                     .location {
-                        /* Rectangle 14 */
-
                         box-sizing: border-box;
-
                         height: 157px;
                         width: 318px;
-
                         background: #FFFFFF;
                         border: 1px solid #ECD4AC;
                         border-radius: 3px;
@@ -240,9 +212,6 @@
                             text-decoration: none;
                             }
                             .address-label {
-                                /* ADRESS */
-
-
                                 width: 60px;
                                 height: 14px;
 
@@ -251,16 +220,8 @@
                                 font-weight: 600;
                                 font-size: 14px;
                                 line-height: 14px;
-                                /* identical to box height, or 100% */
-
                                 text-align: center;
-
-                                /* Color / Grey */
-
                                 color: #918E89;
-
-                                /* Inside auto layout */
-
                                 flex: none;
                                 order: 0;
                                 flex-grow: 0;
@@ -270,28 +231,15 @@
                                 }
                             }
                             .address {
-                                /* Krankroksgatan 7, 721 38 */
-
-
                                 width: 229px;
                                 height: 22px;
-
                                 font-family: 'Montserrat';
                                 font-style: normal;
                                 font-weight: 600;
                                 font-size: 14px;
                                 line-height: 22px;
-                                /* identical to box height */
-
                                 text-align: center;
-
-                                /* Color / Black */
-
                                 color: #000000;
-
-
-                                /* Inside auto layout */
-
                                 flex: none;
                                 order: 1;
                                 flex-grow: 0;
@@ -304,14 +252,10 @@
                         }
                     }
                     .phone {
-                        /* Rectangle 14 */
-
                         box-sizing: border-box;
-
                         height: 157px;
                         width: 318px;
                         padding: 24px;
-
                         background: #FFFFFF;
                         border: 1px solid #ECD4AC;
                         border-radius: 3px;
@@ -338,9 +282,6 @@
                             text-decoration: none;
                             }
                             .phonenumber-label {
-                                /* TELEFONNUMMER */
-
-
                                 width: 137px;
                                 height: 14px;
 
@@ -349,17 +290,8 @@
                                 font-weight: 600;
                                 font-size: 14px;
                                 line-height: 14px;
-                                /* identical to box height, or 100% */
-
                                 text-align: center;
-
-                                /* Color / Grey */
-
                                 color: #918E89;
-
-
-                                /* Inside auto layout */
-
                                 flex: none;
                                 order: 0;
                                 flex-grow: 0;
@@ -369,8 +301,6 @@
                                 }
                             }
                             .phonenumber {
-                                /* 076 027 41 51 */
-
                                 width: 119px;
                                 height: 22px;
 
@@ -379,17 +309,8 @@
                                 font-weight: 600;
                                 font-size: 15px;
                                 line-height: 22px;
-                                /* identical to box height */
-
                                 text-align: center;
-
-                                /* Color / Black */
-
                                 color: #000000;
-
-
-                                /* Inside auto layout */
-
                                 flex: none;
                                 order: 1;
                                 flex-grow: 0;
@@ -432,8 +353,6 @@
                                 height: 98px;
                             }
                             .takeaway-label {
-                                /* TAKEAWAY? */
-
                                 width: 104px;
                                 height: 20px;
                                 left: calc(50% - 104px/2);
@@ -443,18 +362,10 @@
                                 font-weight: 600;
                                 font-size: 16px;
                                 line-height: 20px;
-                                /* identical to box height */
-
                                 text-align: center;
-
-                                /* Color / Black */
-
                                 color: #000000;
                             }
                             .order-takeaway {
-                                /* Beställ takeaway från oss! */
-
-                                
                                 width: 188px;
                                 height: 17px;
                                 
@@ -464,19 +375,10 @@
                                 font-weight: 600;
                                 font-size: 13px;
                                 line-height: 17px;
-                                /* identical to box height */
-
                                 text-align: center;
-
-                                /* Color / Black */
-
                                 color: #000000;
                             }
                             .takeaway-button {
-                                /* Frame 6 */
-
-                                /* Auto layout */
-
                                 display: flex;
                                 flex-direction: row;
                                 justify-content: center;
@@ -490,7 +392,6 @@
 
 
                                 background: #FFFFFF;
-                                /* Shadow */
 
                                 box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.04);
                                 border-radius: 0%;
@@ -499,8 +400,6 @@
                                     display: none;
                                 }
                                 .order-button-label {
-                                    /* UTOPIA YOGA STUDIO */
-
                                     width: 153px;
                                     height: 17px;
 
@@ -509,16 +408,7 @@
                                     font-weight: 700;
                                     font-size: 14px;
                                     line-height: 17px;
-                                    /* identical to box height */
-
-
-                                    /* Color / Black */
-
                                     color: #000000;
-
-
-                                    /* Inside auto layout */
-
                                     flex: none;
                                     order: 1;
                                     flex-grow: 0;

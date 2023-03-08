@@ -11,27 +11,27 @@ export default function DeliveryServices() {
             <div className='container deliveryServices-container'>
                 <div className='columns deliveryServices-columns'>
                     <div className='column left-title'>
-                        <h3>Beställ hemkörning</h3>
-                        <p>Du kan beställa vår mat för hemkörning genom följande tjänster.</p>
+                        <h3>Delivery Services</h3>
+                        <p>Order takeaway from one of our services.</p>
                     </div>
                     <div className='column right'>
                         <div className='columns right-links'>
                             <div className='column'>
-                                <a href='https://wolt.com/sv/swe/vasteras/restaurant/hrnet' target={'_blank'}>
+                                <a href='https:/www.google.com' target={'_blank'}>
                                     <div className='notification wolt'>
                                         <img src={wolt.src} alt='wolt'></img>
                                     </div>
                                 </a>
                             </div>
                             <div className='column'>
-                                <a href='https://www.foodora.se/restaurant/wuvx/hornet-vasteras' target={'_blank'}>
+                                <a href='https://www.google.com' target={'_blank'}>
                                     <div className='notification foodora'>
                                         <img src={foodora.src} alt='foodora'></img>
                                     </div>
                                 </a>
                             </div>
                             <div className='column'>
-                                <a href='https://waytogo.se/restauranger/mat/hornet-vasteras' target={'_blank'}>
+                                <a href='https://www.google.com' target={'_blank'}>
                                     <div className='notification waytogo'>
                                         <img src={waytogo.src} alt='waytogo'></img>
                                     </div>
